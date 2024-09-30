@@ -1,0 +1,427 @@
+<odoo>
+    <data>
+          <record id="partner_view_loan_form" model="ir.ui.view">
+            <field name="name">loan.form</field>
+            <field name="model">partner.loan.details</field>
+            <field name="arch" type="xml">
+                <form string="Loan" version="7.0">
+                    <header>
+
+                        <button string="Apply" type="object" name="action_applied" groups="base.group_user" class="oe_highlight"
+                            states="draft" />
+                        <button name="compute_installments" class="oe_highlight" groups="account.group_account_invoice,odoo_customer_supplier_loan.partner_loan_group_user,odoo_customer_supplier_loan.partner_loan_group_manager"
+                            colspan="2" states="applied" string="Compute" type="object"
+                            help="Compute Installments or change the state according
+                            to the disbursement type for loan request or repayment
+                            type in case of installments" />
+                        <button string="Approve" type="object" name="action_approved" class="oe_highlight" groups="odoo_customer_supplier_loan.partner_loan_group_islamic_manager,odoo_customer_supplier_loan.partner_loan_group_commercial_manager"
+                            states="applied"/>
+                        <button string="Reject" type="object" groups="odoo_customer_supplier_loan.partner_loan_group_islamic_manager,odoo_customer_supplier_loan.partner_loan_group_commercial_manager"
+                            name="action_rejected" states="applied,approved" />
+                        <button string="Reset To Draft" type="object" name="action_reset" states="cancel,rejected" groups="odoo_customer_supplier_loan.partner_loan_group_islamic_manager,odoo_customer_supplier_loan.partner_loan_group_commercial_manager"/>
+
+                        <button string="Cancel" type="object" name="action_cancel"
+							states="draft" groups="odoo_customer_supplier_loan.partner_loan_group_islamic_manager,odoo_customer_supplier_loan.partner_loan_group_commercial_manager"/>
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,applied,approved"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="partner_id" class="oe_edit_only" />
+                            <h1>
+                                <field name="partner_id" on_change="onchange_employee_id(partner_id)" />
+                            </h1>
+                            <label for="name" class="oe_edit_only" />
+                            <h2>
+                                <field name="name" />
+                            </h2>
+                            <h2>
+                                <field name="fac_id" />
+                            </h2>
+                        </div>
+                        <group>
+                            <group>
+                          <!--      <field name="curr" width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"
+
+                                /> -->
+                                <field name="guarantor_id" width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft','applied')]}"
+
+                                />
+                                <field name="employee_id" width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"
+
+                                />
+                                <field name="date_applied" width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="loan_prog"  width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"
+
+                                />
+                                <field name="loan_class" width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                />
+                                <field name="loan_type" widget="selection" on_change="onchange_loan_type(loan_type,partner_id)" />
+                                <field name="no_paym"  width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                />
+                                <field name="first_payment" width="20%%" class="oe_inline" widget="monetary" attrs="{'invisible':['|',('no_paym', '=', '1')]}"/>
+                                <field name="seconed_payment"  width="20%%" class="oe_inline" widget="monetary" attrs="{'invisible':['|',('no_paym', '=', '1')]}"/>
+                                <field name="third_payment" width="20%%" class="oe_inline" widget="monetary" attrs="{'invisible':['|',('no_paym', '=', '2'),('no_paym', '=', '1')]}"/>
+                                <field name="governorate" width="20%%" class="oe_inline" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+
+
+
+
+
+
+
+                              <!--  <field name="loan_partner_type"/>  -->
+
+
+                            </group>
+                            <group>
+                                <field name="date_approved"/>
+                                <field name="date_disb"
+									   groups="account.group_account_invoice"
+                                       width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                />
+                                <field name="actual_grant_date"
+									   groups="account.group_account_invoice"
+                                       width="20%%"
+                                       class="oe_inline"
+                                />
+                                <field name="date_disb_grace"
+									   groups="account.group_account_invoice"
+                                       width="20%%"
+                                       class="oe_inline"
+                                />
+                                <field name="grace_period"
+									   groups="account.group_account_invoice"
+                                       width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                />
+                                <field name="org_fund"
+                                       width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                />
+                                <field name="organ"
+                                       width="20%%"
+                                       class="oe_inline"
+                                       attrs="{'invisible':[('org_fund', '=', 'gov')]}"
+                                />
+
+
+                                <!--								<field name="department_id"/-->
+                                <field name="company_id" groups="base.group_multi_company" widget="selection" />
+                                <field name="user_id" />
+                                <field name="first_dis_date" width="20%%" class="oe_inline" attrs="{'invisible':['|',('no_paym', '=', '1')]}"/>
+                                <field name="second_dis_date" width="20%%" class="oe_inline" attrs="{'invisible':['|',('no_paym', '=', '1')]}"/>
+                                <field name="third_dis_date" width="20%%" class="oe_inline" attrs="{'invisible':['|',('no_paym', '=', '2'),('no_paym', '=', '1')]}"/>
+                                <field name="agri_type" width="20%%" class="oe_inline" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="resch_times" width="20%%" class="oe_inline"/>
+                                <field name="class_comp" width="20%%" class="oe_inline"/>
+
+
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="General">
+                                <group>
+                                    <field name="currency_id" groups="base.group_multi_currency"/>
+                                    <field name="principal_amount" widget="monetary" options="{'currency_field': 'currency_id'}"
+                                        />
+                                    <field name="int_payable" />
+                                    <field name="interest_mode" />
+                                    <field name="duration" />
+                                    <field name="dgrace" attrs="{'invisible':[('grace_period','=', '0')]}" />
+                                    <field name="partner_gross" groups="odoo_customer_supplier_loan.partner_loan_group_manager,odoo_customer_supplier_loan.partner_loan_group_user" required="False"
+                                        invisible="1" />
+                                    <field name="int_rate" />
+                                    <field name="max_loan_amt" invisible="1" attrs="{'invisible':[('state','in',['draft','cancel'])]}"
+                                        />
+                                </group>
+                                <newline />
+                                <field name="installment_lines" readonly="0" nolabel="1">
+                                    <tree editable="top" string="Installments">
+                                        <field name="install_no" />
+                                        <field name="date_from" />
+                                        <field name="date_to" />
+                                        <field name="payment_date" />
+                                        <field name="principal_amt" widget="monetary" options="{'currency_field': 'currency_id'}"
+                                            sum="Principal" />
+                                        <field name="interest_amt" widget="monetary" options="{'currency_field': 'currency_id'}"
+                                            sum="Interest" />
+                                        <field name="tot_sum" widget="monetary" options="{'currency_field': 'currency_id'}"
+                                            sum="Paid" />
+                                        <field name="tot_due" widget="monetary" options="{'currency_field': 'currency_id'}"  />
+                                        <field name="total" widget="monetary"  options="{'currency_field': 'currency_id'}"
+                                            attrs="{'readonly': [('state', '=', 'paid')]}" sum="Total" />
+                                        <field name="paid" widget="monetary"  options="{'currency_field': 'currency_id'}"
+                                            attrs="{'readonly': [('state', '=', 'paid')]}" sum="Total" />
+                                        <field name="remains" widget="monetary" options="{'currency_field': 'currency_id'}"  />
+                                        <field name="state" />
+                                        <field name="currency_id" groups="base.group_multi_currency"/>
+                                        <field name="int_move_id" invisible="1" />
+                                        <button name="pay_installment" confirm="You are trying to create EMI for this loan
+                                            so make sure loan repayment for this loan
+                                            type is not from payroll !" states="approve"
+                                            string="Pay" type="object"
+                                            icon="fa-hand-o-right"
+                                            help="Pay Installment" />
+                                        <button name="book_interest" attrs="{'invisible':['|', ('interest_amt', '=', 0.0),
+                                            ('int_move_id', '!=', False)]}" string="Book
+                                            Interest" type="object" icon="fa-check"
+                                            help="Book Interest" />
+                                        <button name="action_approve" states="unpaid" string="Approve Payment" type="object"
+                                            icon="fa-level-down fa-rotate-90" help="Approve Payment" />
+                                        <button name="action_reset" states="approve" string="Reset To Draft" type="object"
+                                            icon="fa-level-down fa-rotate-90"
+                                            help="Reset To Draft" />
+
+                                    </tree>
+                                </field>
+                                <group>
+                                    <group>
+                                        <field name="sumation" colspan="2" widget="monetary" options="{'currency_field':
+                                            'currency_id'}"/>
+                                        <field name="final_total" colspan="2" widget="monetary" options="{'currency_field':
+                                            'currency_id'}"/>
+                                        <field name="cus_rec" colspan="2" widget="monetary" options="{'currency_field':
+                                            'currency_id'}"/>
+                                        <field name="total_interest_amount" colspan="2" widget="monetary" options="{'currency_field':
+                                            'currency_id'}"/>
+
+                                        <field name="total_amount_paid" colspan="2" widget="monetary" options="{'currency_field':
+                                            'currency_id'}"/>
+                                        <field name="total_amount_due" colspan="2" widget="monetary" options="{'currency_field':
+                                            'currency_id'}"/>
+                                    </group>
+                                    <newline />
+                                </group>
+                            </page>
+                            <page string="Proofs">
+                                <field name="loan_proof_ids" colspan="2" nolabel="1" />
+                            </page>
+                            <page string="Accounting"  groups="account.group_account_invoice">
+                                <group>
+                                    <group>
+                                        <field name="journal_id" colspan="2" />
+									    <field name="disbursed_account_id"/>
+                                        <field name="move_id" colspan="2" />
+                                        <field name="journal_id1" />
+                                        <field name="partner_loan_account" colspan="2" />
+                                    </group>
+                                    <group>
+                                        <field name="journal_id2" />
+                                        <field name="interest_account_id"/>
+                                        <field name="interest_receivable_account_id"/>
+                                        <field name="interest_loan_journal"/>
+
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Policies"
+								groups="account.group_account_invoice,odoo_customer_supplier_loan.partner_loan_group_user">
+                                <separator string="Policies" colspan="4" />
+                                <field name="loan_policy_ids" nolabel="1" colspan="4" />
+                            </page>
+                            <page string="Notes">
+                                <field name="notes" colspan="2" nolabel="1" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"
+                            />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="partner_view_loan_tree" model="ir.ui.view">
+            <field name="name">partner.loan.policy.tree</field>
+            <field name="model">partner.loan.details</field>
+            <field name="arch" type="xml">
+                <tree string="Loans">
+                    <field name="name" />
+                    <field name="date_applied" />
+                    <field name="loan_type" />
+                    <field name="loan_partner_type"/>
+                    <field name="loan_class" domain="[('loan_class', '=', 'Islamic')]"/>
+                    <field name="partner_id" />
+                    <field name="int_payable" invisible="1" />
+                    <field name="interest_mode" invisible="1" />
+                    <field name="date_approved" />
+                    <field name="principal_amount" />
+                    <field name="int_rate" />
+                    <field name="final_total" />
+                    <field name="total_amount_paid" />
+                    <field name="total_amount_due" />
+                    <field name="duration" />
+                    <field name="state" />
+                    <field name="company_id" groups="base.group_multi_company"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="partner_view_loan_graph" model="ir.ui.view">
+            <field name="name">loan.graph</field>
+            <field name="model">partner.loan.details</field>
+            <field name="arch" type="xml">
+                <graph string="Loans" type="bar">
+                    <field name="partner_id" />
+                    <field name="final_total" operator="+" />
+                </graph>
+            </field>
+        </record>
+
+        <record id="partner_view_loan_calendar" model="ir.ui.view">
+            <field name="name">loan.calendar</field>
+            <field name="model">partner.loan.details</field>
+            <field name="arch" type="xml">
+                <calendar string="Loans" color="state" date_start="date_applied">
+                    <field name="partner_id"/>
+                    <field name="principal_amount" />
+                    <field name="int_rate" />
+                    <field name="duration" />
+                    <field name="final_total" />
+                </calendar>
+            </field>
+        </record>
+        <record id="partner_view_loan_filter" model="ir.ui.view">
+            <field name="name">loan.list.select</field>
+            <field name="model">partner.loan.details</field>
+            <field name="arch" type="xml">
+                <search string="Search Loan">
+                    <filter name="approved" icon="terp-camera_test" string="Approved" domain="[('state','=','approved')]"
+                        />
+                    <filter name="toapprove" icon="terp-gtk-media-pause" string=" To Approve" domain="[('state','=','applied')]"
+                        />
+                    <separator orientation="vertical" />
+                    <filter icon="terp-dolar" name="disbursed" string="Disbursed" domain="[('state','=','disburse')]" />
+                    <filter icon="gtk-cancel" name="rejected" string="Rejected" domain="[('state','=','cancel')]" />
+                    <filter icon="terp-dolar" name="paid" string="Paid" domain="[('state','=','done')]" />
+                    <separator orientation="vertical" />
+                    <field name="name" filter_domain="[('name','ilike',self)]" />
+                    <field name="loan_partner_type" filter_domain="[('loan_partner_type','=','customer')]" />
+                    <field name="loan_partner_type" filter_domain="[('loan_partner_type','=','supplier')]" />
+                    <filter name="loan_partner_type" string="Supplier" domain="[('loan_partner_type','=','supplier')]"/>
+                    <filter name="loan_partner_type" string="Customer" domain="[('loan_partner_type','=','customer')]"/>
+                    <field name="partner_id" />
+                    <separator orientation="vertical" />
+                    <field name="int_payable" />
+                    <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+                    <newline />
+                    <group expand="0" string="Search on Dates">
+                        <field name="date_applied" />
+                        <field name="date_approved" />
+                    </group>
+                    <newline />
+                    <group expand="0" string="Group By...">
+                        <filter string="Partner" name="partner" icon="terp-personal" domain="[]" context="{'group_by':'partner_id'}"
+                            />
+                        <filter string="Interest Mode" name="interest_mode" icon="terp-stock_effects-object-colorize" domain="[]"
+                            context="{'group_by':'interest_mode'}" />
+                        <filter string="Interest Payable" name="interest_payable" icon="terp-check" domain="[]" context="{'group_by':'int_payable'}"
+                            />
+                        <filter string="Loan Type" name="loan_type" icon="terp-check" domain="[]" context="{'group_by':'loan_type'}"
+                            />
+                        <separator orientation="vertical" />
+                        <filter string="Applied Date" name="applied_date" icon="terp-go-month" domain="[]" context="{'group_by':'date_applied'}"
+                            />
+                        <filter string="Approved Date" name="approved_date" icon="terp-go-month" domain="[]" context="{'group_by':'date_approved'}"
+                            />
+                        <separator orientation="vertical" />
+                        <filter string="State" name="state" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"
+                            />
+                        <filter string="Company" name="company" icon="terp-go-home" domain="[]" context="{'group_by':'company_id'}"
+                            />
+                        <filter string="Partner Type" name="partner_type" domain="[]" context="{'group_by':'loan_partner_type'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="partner_action_islamic_loan" model="ir.actions.act_window">
+            <field name="name">Islamic Loans</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">partner.loan.details</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="search_view_id" ref="partner_view_loan_filter" />
+            <field name="domain">['|', '|', '|', ('state','=','approved'),('state','=','disburse'),('state','=','1disburse'),('state','=','2disburse'),('loan_class','=','islamic')]</field>
+            <field name="help">This is the view where the loan request will be
+				encoded</field>
+        </record>
+        <record id="partner_action_comm_loan" model="ir.actions.act_window">
+            <field name="name">Commercial Loans</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">partner.loan.details</field>
+
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="search_view_id" ref="partner_view_loan_filter" />
+            <field name="domain">['|', '|', '|', ('state','=','approved'),('state','=','disburse'),('state','=','1disburse'),('state','=','2disburse'),('loan_class','=','commercial')]</field>
+            <field name="help">This is the view where the loan request will be
+				encoded</field>
+        </record>
+        <record id="partner_action_new_loans" model="ir.actions.act_window">
+            <field name="name">New Loans</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">partner.loan.details</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="search_view_id" ref="partner_view_loan_filter" />
+            <field name="domain">['|',('state','=','draft'),('state','=','applied')]</field>
+            <field name="help">This is the view where the loan request will be
+				encoded</field>
+        </record>
+         <record id="partner_action_loan_toapprove" model="ir.actions.act_window">
+            <field name="name">Loan Requests To Approve</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">partner.loan.details</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="context">{'search_default_toapprove': 1}</field>
+            <field name="search_view_id" ref="partner_view_loan_filter" />
+            <field name="help">This is the view where you can approve the loan
+				pending for approval</field>
+        </record>
+        <record id="partner_action_loan_todisburse" model="ir.actions.act_window">
+            <field name="name">Loan Requests To Disburse</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">partner.loan.details</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="context">{'search_default_approved': 1}</field>
+            <field name="search_view_id" ref="partner_view_loan_filter" />
+            <field name="help">This is the view where you can Disburse the loan
+				that are approved</field>
+        </record>
+
+
+        <menuitem id="partner_loan_root" name="Commercial Loans" sequence="9" action="partner_action_comm_loan" web_icon="odoo_customer_supplier_loan,static/description/loan2.jpg" groups="partner_loan_group_commercial_manager,partner_loan_group_islamic_manager,partner_loan_first_payment_approv,partner_loan_second_payment_approv,partner_loan_first_disb_approv,partner_loan_second_disb_approv,partner_loan_first_resch_approv,partner_loan_second_resch_approv"/>
+        <menuitem id="partner_loan_islamic_root" name="Islamic Loans" sequence="10" action="partner_action_islamic_loan" web_icon="odoo_customer_supplier_loan,static/description/icon.png" groups="partner_loan_group_commercial_manager,partner_loan_group_islamic_manager,partner_loan_first_payment_approv,partner_loan_second_payment_approv,partner_loan_first_disb_approv,partner_loan_second_disb_approv,partner_loan_first_resch_approv,partner_loan_second_resch_approv"/>
+        <menuitem id="partner_new_loans_root" name="New Loans" sequence="11" action="partner_action_new_loans" web_icon="odoo_customer_supplier_loan,static/description/new_loan.png" groups="partner_loan_group_commercial_manager,partner_loan_group_islamic_manager,partner_loan_first_payment_approv,partner_loan_second_payment_approv,partner_loan_first_disb_approv,partner_loan_second_disb_approv,partner_loan_first_resch_approv,partner_loan_second_resch_approv"/>
+
+
+
+       <menuitem action="partner_action_loan_toapprove" sequence="11" id="partner_loan_loan_toapprove" parent="partner_loan_root"
+            groups="odoo_customer_supplier_loan.partner_loan_group_manager,odoo_customer_supplier_loan.partner_loan_group_user"
+            name="Loan Requests to Approve" />
+        <menuitem action="partner_action_loan_todisburse" id="partner_loan_loan_todisburse" sequence="10"
+            parent="partner_loan_root_account" name="Loans to Disburse" />
+
+
+
+
+    </data>
+</odoo>

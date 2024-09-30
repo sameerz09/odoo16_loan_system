@@ -1,0 +1,64 @@
+ <odoo>
+     <data>
+        <record id="partner_loan_partner_view_partner_form" model="ir.ui.view">
+            <field name="name">res.partner.form.lone</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                <data>
+                    <!-- <xpath expr="//field[@name='lang']" position="after"> -->
+                    <xpath expr="//field[@name='title']" position="after">
+                        <newline />
+
+                        <field name="allow_multiple_loan"/>
+                        <field name="loan_defaulter" />
+                        <field name="card_id"/>
+                        <field name="job_id"/>
+                        <field name="birthday"/>
+                        <field name="age"/>
+                    </xpath>
+                    <xpath expr="//sheet/notebook/page[3]" position="before">
+                        <page string="Loan Details">
+                            <group col="4" colspan="4">
+                                <field name="loan_ids" height="360" nolabel="1" colspan="4">
+                                    <tree string="Loans">
+                                        <field name="name" />
+                                        <field name="date_applied" />
+                                        <field name="date_approved" />
+                                        <field name="loan_type" />
+                                        <field name="int_rate" string="Rate" />
+                                        <field name="principal_amount" />
+                                        <field name="final_total" />
+                                        <field name="total_amount_paid" />
+                                        <field name="total_amount_due" />
+                                        <field name="state" />
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                  <page string="Family">
+                            <group col="4" colspan="4">
+                                <field name="fam_ids" height="360" nolabel="1" colspan="4">
+                                    <tree string="Family">
+                                              <field name="member_name" required="1"/>
+                                              <field name="relation_id" required="1"/>
+                                              <field name="member_contact"/>
+                                              <field name="birth_date"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="Loan Policies">
+                            <group col="4" colspan="4">
+                                <separator string="Loan Policies" colspan="4" />
+                                <field name="loan_policy" nolabel="1" colspan="4" />
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+        <menuitem id="partner_loans_customers"  action="account.res_partner_action_customer" sequence="41"
+            name="Customers" web_icon="odoo_customer_supplier_loan,static/description/cus6.jpg"/>
+    </data>
+</odoo>

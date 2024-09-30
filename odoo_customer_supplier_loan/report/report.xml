@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+        <report id="partner_loan_report_analysis_regg"
+                string="Print Test"
+                model="partner.loan.details"
+                report_type="qweb-pdf"
+                file = "odoo_customer_supplier_loan.partner_loan_report_qwebb"
+                name = "odoo_customer_supplier_loan.partner_loan_report_qwebb"/>
+
+          <report id="report_attendance"
+            string="Report Monetary PDF"
+            model="partner.loan.details"
+            report_type="qweb-pdf"
+            file="erpezi_hr.report_attendance_template225"
+            name="erpezi_hr.report_attendance_template225"
+         />
+         <report
+            id="partner_xlsx"
+            model="partner.loan.details"
+            string="Print to XLSX"
+            report_type="xlsx"
+            name="odoo_customer_supplier_loan.loan_xlsx"
+            file="odoo_customer_supplier_loan.loan_xlsx"
+            attachment_use="False"
+         />
+         <report
+            id="sampo_report"
+            model="partner.loan.details"
+            string="Print to Portfolio"
+            report_type="xlsx"
+            name="odoo_customer_supplier_loan.payroll_batch_report"
+            file="odoo_customer_supplier_loan.sam_po_excel"
+            attachment_use="False"
+         />
+        <report
+            id="borrower_report"
+            model="partner.loan.details"
+            string="Borrower Report"
+            report_type="xlsx"
+            name="odoo_customer_supplier_loan.borrowers_xlsx_report"
+            file="odoo_customer_supplier_loan.borrowers_xlsx_report"
+            attachment_use="False"
+         />
+        <report
+            id="totalloans_report"
+            model="partner.loan.details"
+            string="Total Loans Financing"
+            report_type="xlsx"
+            name="odoo_customer_supplier_loan.total_loans_financing_xlsx"
+            file="odoo_customer_supplier_loan.total_loans_financing_xlsx"
+            attachment_use="False"
+         />
+        <report
+            id="loan_ages_report"
+            model="partner.loan.details"
+            string="Loan Ages Receivables"
+            report_type="xlsx"
+            name="odoo_customer_supplier_loan.loan_ages_receivables_xlsx"
+            file="odoo_customer_supplier_loan.loan_ages_receivables_xlsx"
+            attachment_use="False"
+         />
+        <report id="print_recipient_pdf"
+            string="Recipient PDF"
+            model="partner.loan.payments"
+            report_type="qweb-pdf"
+            file="odoo_customer_supplier_loan.report_recipient_template"
+            name="odoo_customer_supplier_loan.report_recipient_template"
+         />
+        <report id="print_disbursment_pdf"
+            string="Disbursment PDF"
+            model="partner.loan.disbursmens"
+            report_type="qweb-pdf"
+            file="odoo_customer_supplier_loan.report_disburse_template"
+            name="odoo_customer_supplier_loan.report_disburse_template"
+         />
+        <report id="payments_reports_xlsx"
+            string="Payments Reports Excel"
+            model="partner.loan.details"
+            report_type="xlsx"
+            file="odoo_customer_supplier_loan.loan_payments_xlsx"
+            name="odoo_customer_supplier_loan.loan_payments_xlsx"
+         />
+        <report id="sum_paym_excel"
+            string="Payments Reports Excel"
+            model="partner.loan.details"
+            report_type="xlsx"
+            file="odoo_customer_supplier_loan.sum_paym_excel"
+            name="odoo_customer_supplier_loan.sum_paym_excel"
+         />
+
+
+
+
+
+    </data>
+</odoo>

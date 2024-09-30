@@ -1,0 +1,126 @@
+<odoo>
+    <data>
+
+
+       <record id="partner_action_loan_payments_reschedule" model="ir.actions.act_window">
+             <field name="name">Loan Payments Reschedule</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="res_model">partner.loan.payments.reschedule</field>
+            <!-- <field name="view_type">form</field> -->
+             <field name="view_mode">tree,form</field>
+             <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">No items found. Let's create one!</p>
+              <p>To get things done, use activities and status on patients.</p>
+             </field>
+
+        </record>
+        <record id="partner_loan_payments_resch_tree" model="ir.ui.view" >
+                   <field name="name">Payments Reschedule List</field>
+                   <field name="model">partner.loan.payments.reschedule</field>
+                   <field name="arch" type="xml">
+
+                     <tree>
+                         <field name="name"/>
+                         <field name="resch_no"/>
+                         <field name="loan_id"/>
+                         <field name="reschedule_date"/>
+                         <field name="pay_amt"/>
+                         <field name="pay_int_amt"/>
+                         <field name="currency_id"/>
+
+
+                     </tree>
+                   </field>
+        </record>
+
+         <record id="partner_loan_payments_resch_form" model="ir.ui.view">
+             <field name="name">Loan Payments Reschedule Form</field>
+             <field name="model">partner.loan.payments.reschedule</field>
+             <field name="arch" type="xml">
+        <form string="Case Upload">
+        <header>
+              <button name="button_confirm" states="draft" string="Confirm" class="oe_highlight" type="object" groups="odoo_customer_supplier_loan.partner_loan_first_resch_approv"/>
+              <button name="button_validate" string="Validate" class="oe_highlight" states="waiting_approval_1" type="object" groups="odoo_customer_supplier_loan.partner_loan_second_resch_approv"/>
+              <button name="button_pay" string="Reschedule" class="oe_highlight" states="approve" type="object"  groups="odoo_customer_supplier_loan.partner_loan_first_resch_approv,odoo_customer_supplier_loan.partner_loan_second_resch_approv"/>
+              <button name="button_refuse" string="Refuse" class="oe_highlight" states="waiting_approval_1" type="object" groups="odoo_customer_supplier_loan.partner_loan_first_resch_approv,odoo_customer_supplier_loan.partner_loan_second_resch_approv"/>
+              <button name="button_cancel" string="Cancel" class="oe_highlight" states="draft" type="object" groups="odoo_customer_supplier_loan.partner_loan_first_resch_approv,odoo_customer_supplier_loan.partner_loan_second_resch_approv"/>
+          <!--    <button name="print_receipt" string="Print Receipt Bond" class="oe_highlight" states="reschedule" type="object"/>  -->
+              <button name="button_remove_installments_and_decrement"
+                        string="Reset Loan Schedule" type="object" 
+                        class="oe_highlight"
+                        states="reschedule"
+                        groups="odoo_customer_supplier_loan.partner_loan_first_resch_approv,odoo_customer_supplier_loan.partner_loan_second_resch_approv"/>
+
+              <field name="state" widget="statusbar" statusbar_visible="draft,waiting_approval_1,approve" groups="odoo_customer_supplier_loan.partner_loan_first_resch_approv,odoo_customer_supplier_loan.partner_loan_second_resch_approv"/>
+
+        </header>
+        <sheet>
+           <group>
+                   <field name="resch_no"/>
+                   <field name="loan_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+
+
+           </group>
+
+
+
+             <group>
+                 <field name="reschedule_date" attrs="{'readonly': [('state', '=', 'paid')]}"/>
+                 <field name="pay_amt" readonly="0"/>                 
+            <!-- <field name="pay_int_amt" attrs="{'readonly': [('state', '!=', 'draft')]}"/> -->
+                 <field name="currency_id"/>
+                 <field name="reschedule_start_date"/>
+                 <field name="install_no"/>
+
+           </group>
+
+               <notebook>
+                            <page string="Customer Details">
+                                <group col="4">
+                                    <field name="customer" string="Customer Name" />
+                                    <field name="age" />
+                                    <field name="guarantor" />
+
+
+                                </group>
+                            </page>
+
+                         <!--   <page string="Loan Detals">
+                                <group col="4">
+                                    <field name="bal_loan_amt"/>
+                                    <field name="tot_rest_org_amt" />
+                                    <field name="rest_int_loan_amt" />
+                                    <field name="rest_comm_loan_amt" />
+                                </group>
+                            </page>
+
+                            <page string="Commitment Detals">
+                                <group col="4">
+                                    <field name="aging1"/>
+                                    <field name="aging2"/>
+                                    <field name="aging3"/>
+                                    <field name="aging4"/>
+                                    <field name="class_comp"/>
+
+
+                                </group>
+                            </page> -->
+
+                        </notebook>
+
+
+        </sheet>
+
+        <div class="oe_chatter">
+           <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+           <field name="activity_ids" widget="mail_activity"/>
+           <field name="message_ids" widget="mail_thread"/>
+        </div>
+        </form>
+   </field>
+</record>
+
+
+   <menuitem id="reschedule_payments_loan_root" action="partner_action_loan_payments_reschedule" name="Reschedule" sequence="20" web_icon="odoo_customer_supplier_loan,static/description/sched5.png" groups="account.group_account_invoice,odoo_customer_supplier_loan.partner_loan_group_manager"/>
+  </data>
+</odoo>

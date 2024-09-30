@@ -1,0 +1,2189 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_customer_supplier_loan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-20 05:46+0000\n"
+"PO-Revision-Date: 2021-09-20 05:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "%s  does not Qualify for %s "
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<b>Installments</b>"
+msgstr "الدفعات"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<b>Policies</b>"
+msgstr "السياسات"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Date Applied  :</b></span>"
+msgstr "تاريخ التقديم"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Date Approved :</b></span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Date Repayment:</b></span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Disbursement Type    :</b></span>"
+msgstr "نوع الصرف"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Duration         :</b></span>"
+msgstr "المدة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Interest Mode    :</b></span>"
+msgstr "نوع الفائدة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Interest Rate    :</b></span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Loan Type    :</b></span>"
+msgstr "نوع القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Name :</b></span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Payment Type    :</b></span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span><b>Principal Amount : </b></span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span>Amount Due</span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span>Amount Received</span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span>Interest Amount</span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span>Manager :</span><br/>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "<span>Total</span>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "<strong>Interest Rate :</strong>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "<strong>Loan Type :</strong>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "<strong>Principal Amount :</strong>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "<strong>Total Loan :</strong>"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__access_warning
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__access_warning
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_root_account
+msgid "Accounting"
+msgstr "محاسبة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__move_id
+msgid "Accounting Entry once loan has been given to Partner"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_needaction
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_needaction
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__loan_policy_ids
+msgid "Active Policies"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__activity_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__activity_exception_decoration
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_exception_decoration
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__activity_state
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_state
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__allow_multiple_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner_category__allow_multiple_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_users__allow_multiple_loan
+msgid "Allow Multiple Loans"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__amount_already_paid
+msgid "Amount Already Paid"
+msgstr "مبلغ تم دفعه"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__state__applied
+msgid "Applied"
+msgstr "مقدم"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__date_applied
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Applied Date"
+msgstr "تاريخ تقديم الطلب"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Apply"
+msgstr "تقديم"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Approve"
+msgstr "موافق"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Approve Payment"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__state__approved
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Approved"
+msgstr "موافق"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__date_approved
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Approved Date"
+msgstr "اريخ الموافقة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_policy__max_loan_type
+msgid "As a percentage of Basic/Gross Salary or as a fixed amount"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_attachment_count
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_attachment_count
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__total_amount_due
+msgid "Balance on Loan"
+msgstr "رصيد القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__bank_account_id
+msgid "Bank/Cash Account"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__bank_journal_id
+msgid "Bank/Cash Journal"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__max_loan_type
+msgid "Basis"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__bm
+msgid "Bethlehem"
+msgstr "بيت لحم"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Book                                             Interest"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Book Interest"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Book interest entry is already generated !"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__partner_loan_account
+msgid "Borrower Loan Account"
+msgstr "حساب دائن القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__age
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_users__age
+msgid "Calculated Age"
+msgstr "العمر"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__state__cancel
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__card_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_users__card_id
+msgid "Card ID"
+msgstr "رقم الهوية"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__loan_prog__cluster
+msgid "Cluster Program"
+msgstr "برنامج العناقيد"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__code
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__code
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "Code"
+msgstr "كود"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__loan_class__commercial
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_installment_details__loan_class__commercial
+msgid "Commercial"
+msgstr "تجاري"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__company_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__company_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__company_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__company_id
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_policy_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Company"
+msgstr "الشركة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Compute"
+msgstr "احتساب"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid ""
+"Compute Installments or change the state according"
+"                             to the disbursement type for loan request or "
+"repayment                             type in case of installments"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_policy_configure
+msgid "Configuration"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.actions.act_window,help:odoo_customer_supplier_loan.partner_action_loan_proof
+msgid "Configure different loan Proofs"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.actions.act_window,help:odoo_customer_supplier_loan.partner_action_loan_type
+msgid "Configure different loan types"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+msgid "Confirm"
+msgstr "موافق"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+msgid "Confirm Installment"
+msgstr "دفعة موافقة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_installment_details__state__approve
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_install_account_filter
+msgid "Confirmed"
+msgstr "موافق"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.act_window,name:odoo_customer_supplier_loan.partner_action_loan_install_confirm
+msgid "Confirmed Loan Installments"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__create_uid
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__create_uid
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__create_uid
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof__create_uid
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__create_uid
+msgid "Created by"
+msgstr "انشيء بواسطة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__create_date
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__create_date
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__create_date
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof__create_date
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__create_date
+msgid "Created on"
+msgstr "انشيء في"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__currency_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__loan_partner_type__customer
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_installment_details__loan_partner_type__customer
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Customer"
+msgstr "العميل"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__cus_rec
+msgid "Customer Amount Recieved"
+msgstr "المبلغ الذي استلمه العميل"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__access_url
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__access_url
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loans
+msgid "Date Applied"
+msgstr "تاريخ التقديم"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loans
+msgid "Date Approved"
+msgstr "تاريخ الموافقة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__date_from
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Date From"
+msgstr "من تاريخ"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__birthday
+msgid "Date Of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__date_to
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Date To"
+msgstr "الى تاريخ"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__dh
+msgid "Deir al-Balah"
+msgstr "دير البلح"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+msgid "Details"
+msgstr "تفاصيل"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_type__disburse_method__loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_type__payment_method__cash
+msgid "Direct Cash/Cheque"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__disbursed_account_id
+msgid "Disburse Account"
+msgstr "حساب الصرف"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__journal_id
+msgid "Disburse Journal"
+msgstr "جريدة الصرف"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__move_id
+msgid "Disburse Journal Entry"
+msgstr "مدخلات جريدة الصرف"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Disburse Loan"
+msgstr "صرف القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__disburse_method
+msgid "Disburse Method"
+msgstr "طريقة الصرف"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__state__disburse
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Disbursed"
+msgstr "صرف"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__date_disb
+msgid "Disbursement Date"
+msgstr "تاريخ الصرف"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__date_disb_grace
+msgid "Disbursement with Grace Date "
+msgstr "تاريخ سداد اول دفعة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__display_name
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__display_name
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__display_name
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof__display_name
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_policy__state__done
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_type__state__done
+msgid "Done"
+msgstr "تم"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__state__draft
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_policy__state__draft
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_type__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__duration
+msgid "Duration(Months)"
+msgstr "المدة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "EMI"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__total
+msgid "EMI (Installment)"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "EMI of loan %s"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "EMI(Installment)"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__employee_id
+msgid "Employee responsible"
+msgstr "موظف مسؤول"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__total
+msgid "Equated monthly installments."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__org_fund__external
+msgid "External Funding"
+msgstr "تمويل خارجي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__fam_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_users__fam_ids
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_partner_view_partner_form
+msgid "Family"
+msgstr "العائلة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_res_partner__fam_ids
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_res_users__fam_ids
+msgid "Family Information"
+msgstr "معلومات العائلة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__organ
+msgid "Financier Name"
+msgstr "اسم الممول"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__first_payment
+msgid "First Disburse"
+msgstr "اول صرف
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__first_dis_date
+msgid "First Disburse Date"
+msgstr "تاريخ أول صرف"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_policy__max_loan_type__fixed
+msgid "Fix Amount"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__interest_mode__flat
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_type__interest_mode__flat
+msgid "Flat"
+msgstr "ثابتة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Flat Interest"
+msgstr "فائدة ثابتة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_follower_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_follower_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_channel_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_channel_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_partner_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_partner_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "From"
+msgstr "من"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__org_fund
+msgid "Funding Source"
+msgstr "مصدر التمويل"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_policy__policy_type__loan_gap
+msgid "Gap between two loans"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__guarantor_id
+msgid "Garantor"
+msgstr "الكفيل"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__ga
+msgid "Gaza"
+msgstr "غزة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_form
+msgid "General"
+msgstr "عام"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__org_fund__gov
+msgid "Government Funding"
+msgstr "تمويل حكومي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__governorate
+msgid "Governorate"
+msgstr "المحافظة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__dgrace
+msgid "Grace Duration(Months) "
+msgstr "مدة القرض بعد احتساب السماح"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__grace_period
+msgid "Grace period"
+msgstr "فترة سماح"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__partner_gross
+msgid "Gross Salary"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_policy_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Group By..."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__hn
+msgid "Hebron"
+msgstr "الخليل"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof__id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__id
+msgid "ID"
+msgstr "رقم"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__organ__ifad
+msgid "IFAD"
+msgstr "ايفاد"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_installment_details__loan_class__islamic
+msgid "ISLAMIC"
+msgstr "اسلامي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__activity_exception_icon
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_exception_icon
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__activity_exception_icon
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_exception_icon
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__message_needaction
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__message_unread
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_needaction
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_unread
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__message_needaction
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__message_has_error
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__message_has_sms_error
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_has_error
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_has_sms_error
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__message_has_error
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_policy__policy_value
+msgid ""
+"If policy type is Max Loan Amount and Basis is Fixed Amount, then set value as a fixed amount, ie maximum loan that can be taken. \n"
+" If policy type is Gap between two loans or Qualifying Period, then set value as a number of months."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Installment                         that has been paid"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+msgid "Installment No."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "Installment Number"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__install_no
+msgid "Installment number."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#, python-format
+msgid "Installment of %s"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_install_account_filter
+msgid "Installment that has been confirmed"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__installment_lines
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_calendar
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Installments"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Int.Rate"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Interest"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__interest_account_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__loan_interest_account
+msgid "Interest Account"
+msgstr "قيمة الفائدة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__int_move_id
+msgid "Interest Accounting Entry"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__interest_amt
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "Interest Amount"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__journal_id2
+msgid "Interest Journal"
+msgstr "جريدة الفائدة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__interest_mode
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__interest_mode
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Interest Mode"
+msgstr "نوع الفائدة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__interest_loan_journal
+msgid "Interest On Loan Journal Entry"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__int_payable
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Interest Payable"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__interest_receivable_account_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__recievable_account_id
+msgid "Interest Receivable Account"
+msgstr "حساب استلام الفائدة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__loan_type
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__loan_type
+msgid "Interest Type"
+msgstr "نوع الفائدة"
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#, python-format
+msgid "Interest of Installment No. %s of %s"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Interest of loan %s"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__move_id
+msgid "Interest on Loan Journal Entry"
+msgstr "جريدة الفائدة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__int_rate
+msgid "Interest rate between 0-100 in range"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_is_follower
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_is_follower
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__int_payable
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__int_payable
+msgid "Is Interest Payable"
+msgstr "هل هنالك فائدة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__loan_class__islamic
+msgid "Islamic"
+msgstr "اسلامي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__disbursed_account_id
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__interest_account_id
+msgid "It acts as a default account for credit amount"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__bank_account_id
+msgid "It acts as a default account for debit amount"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.actions.act_window,help:odoo_customer_supplier_loan.partner_action_loan_policy
+msgid ""
+"It will be used to decide different criteria of loan for categories of partner's or\n"
+"                for particular partner"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__jn
+msgid "Jenin"
+msgstr "جنين"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__jo
+msgid "Jericho"
+msgstr "أريحا"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__jm
+msgid "Jerusalem"
+msgstr "القدس"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__job_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_users__job_id
+msgid "Job"
+msgstr "وظيفة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__journal_id
+msgid "Journal related to loan for Accounting Entries"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__ks
+msgid "Khan Yunis"
+msgstr "خان يونس"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details____last_update
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details____last_update
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy____last_update
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof____last_update
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type____last_update
+msgid "Last Modified on"
+msgstr "اخر تعديل"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__write_uid
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__write_uid
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__write_uid
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof__write_uid
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__write_uid
+msgid "Last Updated by"
+msgstr "اخر تحديث بواسطة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__write_date
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__write_date
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__write_date
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof__write_date
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__write_date
+msgid "Last Updated on"
+msgstr "اخر تحديث"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__loan_id
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Loan"
+msgstr "قرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_type
+msgid "Loan             Types"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__loan_class
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__loan_class
+msgid "Loan Classification"
+msgstr "تصنيف القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__loan_defaulter
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_users__loan_defaulter
+msgid "Loan Defaulter"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_partner_view_partner_form
+msgid "Loan Details"
+msgstr "تفاصيل القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model,name:odoo_customer_supplier_loan.model_partner_loan_installment_details
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_account_payment__installment
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+msgid "Loan Installment"
+msgstr "دفعة القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__total_amt_move_id
+msgid "Loan Installment Entry"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.act_window,name:odoo_customer_supplier_loan.partner_action_loan_installment
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_install_ment_menu
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_graph
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+msgid "Loan Installments"
+msgstr "دفعات القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_installment
+msgid "Loan Installments "
+msgstr "دفعات القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.module.category,name:odoo_customer_supplier_loan.module_partner_loan_category
+msgid "Loan Management"
+msgstr "ادارة القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:res.groups,name:odoo_customer_supplier_loan.partner_loan_group_manager
+msgid "Loan Manager"
+msgstr "مدير القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loans
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Loan Number"
+msgstr "رقم القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "Loan N°"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__loan_partner_type
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__loan_partner_type
+msgid "Loan Partner Type"
+msgstr "نوع القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.act_window,name:odoo_customer_supplier_loan.partner_action_loan_policy
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__loan_policy
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner_category__loan_policy
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_users__loan_policy
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_policies
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_partner_view_partner_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_policy_form
+msgid "Loan Policies"
+msgstr "سياسات القرض"
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid ""
+"Loan Policies not satisfied :\n"
+" %s "
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model,name:odoo_customer_supplier_loan.model_partner_loan_policy
+msgid "Loan Policy Details"
+msgstr "تفاصيل سياسة القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__loan_prog
+msgid "Loan Program"
+msgstr "برنامج القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model,name:odoo_customer_supplier_loan.model_partner_loan_proof
+msgid "Loan Proof"
+msgstr "اثباتات القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.act_window,name:odoo_customer_supplier_loan.partner_action_loan_proof
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__loan_proof_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__loan_proof_ids
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_menu_loan_proof
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_proof_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_proof_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_form
+msgid "Loan Proofs"
+msgstr "اثباتات القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__journal_id1
+msgid "Loan Repayment Journal"
+msgstr "جريدة اعادة دفع القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.act_window,name:odoo_customer_supplier_loan.partner_action_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_request_menu
+msgid "Loan Requests"
+msgstr "طلبات القروض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.act_window,name:odoo_customer_supplier_loan.partner_action_loan_toapprove
+msgid "Loan Requests To Approve"
+msgstr "طلبات للموافقة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.act_window,name:odoo_customer_supplier_loan.partner_action_loan_todisburse
+msgid "Loan Requests To Disburse"
+msgstr "طلبات لصرف"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_loan_toapprove
+msgid "Loan Requests to Approve"
+msgstr "طلبات للموافقة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__loan_state
+msgid "Loan State"
+msgstr "حالة القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model,name:odoo_customer_supplier_loan.model_partner_loan_type
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loans
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_tree
+msgid "Loan Type"
+msgstr "نوع القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Loan Type with Flat Interest mode"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Loan Type with Reducing Interest mode"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.act_window,name:odoo_customer_supplier_loan.partner_action_loan_type
+msgid "Loan Types"
+msgstr "انواع القروض"
+
+#. module: odoo_customer_supplier_loan
+#: model:res.groups,name:odoo_customer_supplier_loan.partner_loan_group_user
+msgid "Loan User"
+msgstr "مستخدم القرض"
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Loan is not Disbursed yet !"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Loan of %s"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_policy_tree
+msgid "Loan policies"
+msgstr "سياسات القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_account_menu
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_loans
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_root
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_partner_view_partner_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_calendar
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_graph
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.portal_my_home_menu_loans
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.portal_my_loan
+msgid "Loans"
+msgstr "القروض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_partner__loan_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_res_users__loan_ids
+msgid "Loans Details"
+msgstr "تفاصيل القروض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.ui.menu,name:odoo_customer_supplier_loan.partner_loan_loan_todisburse
+msgid "Loans to Disburse"
+msgstr "القروض لصرف"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_main_attachment_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_main_attachment_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof__mandatory
+msgid "Mandatory"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__max_loan_amt
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_policy__policy_type__maxamt
+msgid "Max Loan Amount"
+msgstr "أقصى حد للقرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_has_error
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_has_error
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "My Loans"
+msgstr "قرضي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__ns
+msgid "Nablus"
+msgstr "نابلس"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__name
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__name
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_proof__name
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__name
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "Name"
+msgstr "اسم"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__activity_date_deadline
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_date_deadline
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__activity_summary
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_summary
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__activity_type_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_type_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__grace_period__0
+msgid "No Grace"
+msgstr "بدون سماح"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__na
+msgid "North Gaza"
+msgstr "شمال غزة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__notes
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__name
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__install_no
+msgid "Number"
+msgstr "رقم"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__no_paym
+msgid "Number Of Payments"
+msgstr "عدد دفعات صرف القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_needaction_counter
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_needaction_counter
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_has_error_counter
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_has_error_counter
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__message_needaction_counter
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_needaction_counter
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__message_has_error_counter
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_has_error_counter
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__message_unread_counter
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_unread_counter
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__organ__external
+msgid "OXFAM"
+msgstr "اوكسفام"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__no_paym__1
+msgid "One Payment"
+msgstr "دفعة واحدة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__interest_mode__fees
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_type__interest_mode__fees
+msgid "Operation Fees"
+msgstr "مصاريف تشغيلية"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__state__paid
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_installment_details__state__paid
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Paid"
+msgstr "مدفوع"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model,name:odoo_customer_supplier_loan.model_res_partner
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__partner_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__partner_id
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Partner"
+msgstr "العميل"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__partner_categ_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__partner_categ_ids
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_policy_form
+msgid "Partner Categories"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model,name:odoo_customer_supplier_loan.model_res_partner_category
+msgid "Partner Category"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__partner_gross
+msgid ""
+"Partner Gross Salary from Payslip if payslip is not available please enter "
+"value manually."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model,name:odoo_customer_supplier_loan.model_partner_loan_details
+msgid "Partner Loan"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Partner Type"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__partner_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__partner_ids
+msgid "Partner's"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_policy_form
+msgid "Partners"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Pay"
+msgstr "ادفع"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Pay Installment"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__first_payment
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__seconed_payment
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__third_payment
+msgid "Payment Number."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please Compute installment"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid ""
+"Please Enter values greater then zero:\n"
+" %s "
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#, python-format
+msgid "Please configure Bank Journal."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure Debit/Credit accounts on the Interest Journal %s "
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure Debit/Credit accounts on the Journal %s "
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure Disburse Journal."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure Home Address On partner."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure Home Address for Partner !"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure Home Address for partner !"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure Interest Journal."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure Partner account."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure debit account of Interest"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_installment_journal.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please configure debit account of partner"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please give disbursement date."
+msgstr "من فضلع ادخل تاريخ الصرف"
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please give partner account."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "Please specify partner."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Policies"
+msgstr "سياسات"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__policy_type
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_policy_filter
+msgid "Policy Type"
+msgstr "نوع السياسة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__access_url
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__access_url
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Principal"
+msgstr "اساسي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__principal_amount
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__principal_amt
+msgid "Principal Amount"
+msgstr "المبلغ الاساس"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+msgid "Principle Amount"
+msgstr "المبلغ الاساس"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.actions.report,name:odoo_customer_supplier_loan.partner_loan_report_analysis_reg
+msgid "Print Loan"
+msgstr "طباعة القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__agri_type
+msgid "Project Type"
+msgstr "نوع المشروع"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Proofs"
+msgstr "الوثائق"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__int_rate
+msgid "Put interest between 0-100 in range"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__qa
+msgid "Qalqilya"
+msgstr "قلقيلية"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__rh
+msgid "Rafah"
+msgstr "رفح"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__int_rate
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__int_rate
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_partner_view_partner_form
+msgid "Rate"
+msgstr "فائدة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__total_amount_paid
+msgid "Received From Partner"
+msgstr "المبلغ المسدد"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__interest_mode__reducing
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_type__interest_mode__reducing
+msgid "Reducing"
+msgstr "متناقصة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Reducing Interest"
+msgstr "فائدة متناقصة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Reject"
+msgstr "رفض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__state__rejected
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Rejected"
+msgstr "مرفوض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__total_amount_due
+msgid "Remaining Amount due."
+msgstr "المبلغ المتبقي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__date_repayment
+msgid "Repayment Date"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__payment_method
+msgid "Repayment Method"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Reset To Draft"
+msgstr "تعيين لمسودة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__activity_user_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_user_id
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_has_sms_error
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_has_sms_error
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__st
+msgid "Salfit"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Search Loan"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_install_account_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Search Loan Installment"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_policy_filter
+msgid "Search Loan Policies"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_type_filter
+msgid "Search Loan Type"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "Search on Dates"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__seconed_payment
+msgid "Second Disburse"
+msgstr "الصرف الثاني"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__second_dis_date
+msgid "Second Disburse Date"
+msgstr "تاريخ الصرف الثاني"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__access_token
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__access_token
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__state
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__state
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__state
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__state
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_installment_filter
+msgid "State"
+msgstr "الحالة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loans
+msgid "Status"
+msgstr "الحالة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__activity_state
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_state
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__loan_partner_type__supplier
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_installment_details__loan_partner_type__supplier
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "Supplier"
+msgstr "مزود"
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "There is no home/work address defined for partner : %s "
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.11.8.21.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.old.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "There is no partner defined for partner : %s "
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__third_payment
+msgid "Third Disburse"
+msgstr "الصرف الثالث"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__third_dis_date
+msgid "Third Disburse Date"
+msgstr "تاريخ الصرف الثالث"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.actions.act_window,help:odoo_customer_supplier_loan.partner_action_loan
+msgid ""
+"This is the view where the loan request will be\n"
+"\t\t\t\tencoded"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.actions.act_window,help:odoo_customer_supplier_loan.partner_action_loan_install_confirm
+#: model_terms:ir.actions.act_window,help:odoo_customer_supplier_loan.partner_action_loan_todisburse
+msgid ""
+"This is the view where you can Disburse the loan\n"
+"\t\t\t\tthat are approved"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.actions.act_window,help:odoo_customer_supplier_loan.partner_action_loan_toapprove
+msgid ""
+"This is the view where you can approve the loan\n"
+"\t\t\t\tpending for approval"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.actions.act_window,help:odoo_customer_supplier_loan.partner_action_loan_installment
+msgid ""
+"This shows you the detail installments related to\n"
+"\t\t\t\tloan"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__no_paym__3
+msgid "Three Payments"
+msgstr "ثلاث دفعات"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "To"
+msgstr "الى"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_filter
+msgid "To Approve"
+msgstr "للموافقة"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid "Total"
+msgstr "الكلي"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loans
+msgid "Total Amont"
+msgstr "المجموع الكلي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__total_interest_amount
+msgid "Total Fees On Loan"
+msgstr "مجموع العمولات على القرض"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__final_total
+msgid "Total Loan After Fees Deductions"
+msgstr "مجموع القرض بدون العملات"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__sumation
+msgid "Total Loan With Fees Cost"
+msgstr "مجموع القرض مع العمولات"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__loan_prog__trial
+msgid "Trial"
+msgstr "تجريبي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__ts
+msgid "Tubas"
+msgstr "طوباس"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__governorate__tm
+msgid "Tulkarm"
+msgstr "طولكرم"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__no_paym__2
+msgid "Two Payments"
+msgstr "دفعتين"
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "Type"
+msgstr "نوع"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__activity_exception_decoration
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__activity_exception_decoration
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_installment_details__state__unpaid
+msgid "Unpaid"
+msgstr "غير مدفوع"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_unread
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_unread
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__message_unread_counter
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__message_unread_counter
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_policy__policy_value
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_loan_report_qweb
+msgid "Value"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_details__website_message_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_installment_details__website_message_ids
+#: model:ir.model.fields,field_description:odoo_customer_supplier_loan.field_partner_loan_type__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_details__website_message_ids
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_installment_details__website_message_ids
+#: model:ir.model.fields,help:odoo_customer_supplier_loan.field_partner_loan_type__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_tree
+msgid ""
+"You                         are trying to create EMI for this loan so make "
+"sure loan repayment                         for this loan type is not from "
+"payroll !"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_loan_form
+msgid ""
+"You are trying to create EMI for this loan"
+"                                             so make sure loan repayment for"
+" this loan                                             type is not from "
+"payroll !"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.partner_view_installment_form
+msgid ""
+"You are trying to create EMI for this loan so make sure loan repayment for "
+"this loan type is not from payroll !"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll.py:0
+#: code:addons/odoo_customer_supplier_loan/models/loan_payroll_final_date_grace.py:0
+#, python-format
+msgid "You cannot delete loan request which is not in  draft state."
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model_terms:ir.ui.view,arch_db:odoo_customer_supplier_loan.display_loans
+msgid "Your Loans"
+msgstr "قرضك"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model,name:odoo_customer_supplier_loan.model_account_payment
+msgid "account.payment"
+msgstr ""
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__agri_type__ag
+msgid "agricultural"
+msgstr "زراعي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__agri_type__ae
+msgid "agricultural equipment"
+msgstr "معدات زراعية"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__agri_type__am
+msgid "agricultural marketing"
+msgstr "تسويق زراعي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__agri_type__an
+msgid "animal"
+msgstr "حيواني"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__grace_period__5
+msgid "five months"
+msgstr "خمسة أشهر"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__agri_type__fm
+msgid "food manufacturing"
+msgstr "تصنيع غذائي"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__grace_period__4
+msgid "four months"
+msgstr "أربعة أشهر"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__organ__gov
+msgid "governmental"
+msgstr "المحافظة"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__grace_period__1
+msgid "one month"
+msgstr "شهر واحد"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__grace_period__6
+msgid "six months"
+msgstr "ستة أشهر"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__grace_period__3
+msgid "three months"
+msgstr "ثلاث أشهر"
+
+#. module: odoo_customer_supplier_loan
+#: model:ir.model.fields.selection,name:odoo_customer_supplier_loan.selection__partner_loan_details__grace_period__2
+msgid "two months"
+msgstr "شهران"

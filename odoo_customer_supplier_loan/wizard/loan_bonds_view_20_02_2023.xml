@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="report_bonds_view" model="ir.ui.view">
+        <field name="name">Attendance PDF</field>
+        <field name="model">partner.emp.loan.report</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group col="4">
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </group>
+            <group>
+               <field name="company_id" options="{'no_create': True}" />
+               <field name="loan_id" options="{'no_create': True}" />
+
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+
+    <record id="action_bonds_menu" model="ir.actions.act_window">
+        <field name="name">Bonds Report</field>
+        <field name="res_model">partner.emp.loan.report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_bonds_view"/>
+        <field name="target">new</field>
+    </record>
+    <record id="report_portfolio_view" model="ir.ui.view">
+        <field name="name">Loan Portfolio Report</field>
+        <field name="model">portfolio.report</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group col="4">
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </group>
+            <group>
+               <field name="company_id" options="{'no_create': True}" />
+               <field name="loan_id" options="{'no_create': True}" />
+
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+     <record id="action_portfolio_menu" model="ir.actions.act_window">
+        <field name="name">Loan Portfolio Report</field>
+        <field name="res_model">portfolio.report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_portfolio_view"/>
+        <field name="target">new</field>
+    </record>
+    <record id="report_borrowers_view" model="ir.ui.view">
+        <field name="name">Borrowers  Report</field>
+        <field name="model">borrower.report</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group col="4">
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </group>
+            <group>
+               <field name="company_id" options="{'no_create': True}" />
+               <field name="loan_id" options="{'no_create': True}" />
+
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+     <record id="action_borrowers_menu" model="ir.actions.act_window">
+        <field name="name">Agricultural Activities Report</field>
+        <field name="res_model">borrower.report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_borrowers_view"/>
+        <field name="target">new</field>
+    </record>
+    <record id="report_totalloans_view" model="ir.ui.view">
+        <field name="name">Total Loans  View</field>
+        <field name="model">totalloans.financing</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group col="4">
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </group>
+            <group>
+               <field name="company_id" options="{'no_create': True}" />
+               <field name="loan_id" options="{'no_create': True}" />
+
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+     <record id="action_totalloans_menu" model="ir.actions.act_window">
+        <field name="name">Total Loans  Action</field>
+        <field name="res_model">totalloans.financing</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_totalloans_view"/>
+        <field name="target">new</field>
+    </record>
+     <record id="loan_ages_receivables_view" model="ir.ui.view">
+        <field name="name">Loans Ages of receivables</field>
+        <field name="model">loan.ages.receivables</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group col="4">
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </group>
+            <group>
+               <field name="company_id" options="{'no_create': True}" />
+               <field name="loan_id" options="{'no_create': True}" />
+
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+     <record id="action_loan_ages_receivables" model="ir.actions.act_window">
+        <field name="name">Loans Ages of receivables</field>
+        <field name="res_model">loan.ages.receivables</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_totalloans_view"/>
+        <field name="target">new</field>
+    </record>
+    <record id="loan_payments_view" model="ir.ui.view">
+        <field name="name">Loans Payments</field>
+        <field name="model">loan.payments</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group col="4">
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </group>
+            <group>
+               <field name="company_id" options="{'no_create': True}" />
+               <field name="loan_id" options="{'no_create': True}" />
+
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+     <record id="action_loan_payments" model="ir.actions.act_window">
+        <field name="name">Loans Payments</field>
+        <field name="res_model">loan.payments</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_totalloans_view"/>
+        <field name="target">new</field>
+    </record>
+   
+
+
+    
+
+
+    <menuitem id="partner_loan_bonds" parent="account.menu_finance" name=" Summery Reports" sequence="120"/>
+   <!-- <menuitem action="odoo_customer_supplier_loan.partner_action_loan" id="partner_loan_bonds" parent="odoo_customer_supplier_loan.partner_loan_root" name="Reports" sequence="120"/>  -->
+  <!--  <menuitem action="odoo_customer_supplier_loan.partner_action_loan" id="partner_loan_bonds" parent="odoo_customer_supplier_loan.partner_loan_root" name="Reports" sequence="120"/> -->
+   <!-- <menuitem action="action_bonds_menu" id="partner_loan_receipt" parent="partner_loan_bonds" name="Receipt" sequence="3"/> -->
+    <menuitem action="action_portfolio_menu" id="loan_portfolio_report" parent="partner_loan_bonds" name="Loan Portfolio Report" sequence="99"/>
+    <menuitem action="action_borrowers_menu" id="borrowers_report_menu" parent="partner_loan_bonds" name="Borrowers Report" sequence="101"/>
+    <menuitem action="action_totalloans_menu" id="totalloans_report_menu" parent="partner_loan_bonds" name="Total Loans Financing Report" sequence="102"/>
+    <menuitem action="action_loan_ages_receivables" id="loan_ages_receivables_menu" parent="partner_loan_bonds" name="Loans Ages of receivables Report" sequence="103"/>
+    <menuitem action="action_loan_payments" id="loan_payments_menu" parent="partner_loan_bonds" name="Payments Report" sequence="104"/>
+
+   <!-- <menuitem action="agricultural_actendance_menu" id="agricultural_attendance_report" parent="partner_loan_bonds" name="Agricultural Activities Report" sequence="102"/> -->
+
+  <!--  <menuitem id="reconstruction_receivables_report"
+              name="Agricultural Activities Report"
+              sequence="6"
+              parent="partner_loan_bonds"
+
+    />
+    <menuitem id="reconstruction_receivables Rport"
+              name="Reconstruction Receivables Report"
+              sequence="7"
+              parent="partner_loan_bonds"
+
+    />
+    <menuitem id="borrower_data_report"
+              name="Borrower Data Report "
+              sequence="8"
+              parent="partner_loan_bonds"
+
+    />
+    <menuitem id="borrower_statement"
+              name="Borrower Statement"
+              sequence="9"
+              parent="partner_loan_bonds"
+
+    />  -->
+
+    <!--<menuitem action="action_menu_portfolio_reports"
+              name="Portfolio Reports"
+              sequence="10"
+              parent="partner_loan_bonds"/>  -->
+
+</odoo>

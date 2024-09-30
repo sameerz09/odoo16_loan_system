@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="report_attendance_view" model="ir.ui.view">
+        <field name="name">Monetary PDF</field>
+        <field name="model">report.monetary</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group col="4">
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </group>
+            <group>
+                <field name="company_id" options="{'no_create': True}" />
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+
+    <record id="action_report_monetary_menu" model="ir.actions.act_window">
+        <field name="name">Monetary PDF</field>
+        <field name="res_model">report.monetary</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_attendance_view"/>
+        <field name="target">new</field>
+    </record>
+
+   <menuitem id="menu_report_monetary_menu"
+              name="Monetary Reports"
+              sequence="1"
+              parent="partner_loan_bonds"
+   />
+
+
+    <menuitem id="menu_report_monetary_pdf"
+              name="Monetary PDF"
+              sequence="2"
+              action="action_report_monetary_menu"
+              parent="menu_report_monetary_menu"
+    />
+
+    <menuitem id="menu_report_monetary_excel"
+              name="Monetary Excel"
+              sequence="3"
+              action="action_report_monetary_menu"
+              parent="menu_report_monetary_menu"
+    />
+
+
+</odoo>
