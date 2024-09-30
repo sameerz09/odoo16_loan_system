@@ -1,0 +1,362 @@
+from odoo import models
+from datetime import datetime, timedelta
+from datetime import datetime
+import datetime
+from datetime import date
+
+
+class PartnerXlsx(models.AbstractModel):
+    _name = 'report.erpezi_hr.loan_xlsx'
+    _inherit = 'report.report_xlsx.abstract'
+
+
+
+    def generate_xlsx_report(self, workbook, data, partners):
+      #  print("mmmmmm", data['appointment'])
+        sheet = workbook.add_worksheet("Appointment")
+        bold = workbook.add_format({'bold': True})
+        cell_format = workbook.add_format({'bold': True, 'italic': True})
+
+        sheet.set_column(0, 0, None, cell_format)
+
+        sheet.set_column(0, 86, 20)
+
+        row = 0
+        col = 0
+
+        sheet.write(row, col, 'رقم الهوية او جواز السفر ')
+        sheet.write(row, col + 1, 'نوع وثيقة المقترض', bold)
+        sheet.write(row, col + 2, 'رمز الجنسية', bold)
+        sheet.write(row, col + 3, 'facility ID', bold)
+        sheet.write(row, col + 4, 'تصنيف التسهيل', bold)
+        sheet.write(row, col + 5, 'تصنيف الحساب', bold)
+        sheet.write(row, col + 6, 'رقم الشركة', bold)
+        sheet.write(row, col + 7, 'رقم الفرع', bold)
+        sheet.write(row, col + 8, 'الشهر', bold)
+        sheet.write(row, col + 9, 'السنة', bold)
+        sheet.write(row, col + 10, 'نوع التسهيل', bold)
+        sheet.write(row, col + 11, 'عملة المنح', bold)
+        sheet.write(row, col + 12, 'القطاع الاقتصادي', bold)
+        sheet.write(row, col + 13, 'تقييم وضع العميل', bold)
+        sheet.write(row, col + 14, 'السقف الممنوح', bold)
+        sheet.write(row, col + 15, 'الرصيد المستغل', bold)
+        sheet.write(row, col + 16, 'حجم المخصص', bold)
+        sheet.write(row, col + 17, 'تاريخ المنح', bold)
+        sheet.write(row, col + 18, 'تاريخ استحقاق اخر قسط', bold)
+        sheet.write(row, col + 19, 'قيمة الاقساط المستحقة غير المسددة', bold)
+        sheet.write(row, col + 20, 'نوع القسط الدوري', bold)
+        sheet.write(row, col + 21, 'قيمة القسط الدوري', bold)
+        sheet.write(row, col + 22, 'لاجراءات القانونية', bold)
+        sheet.write(row, col + 23, 'عدد اقساط التسهيل الممنوح', bold)
+        sheet.write(row, col + 24, 'تاريخ اخر قسط تم تسديده', bold)
+        sheet.write(row, col + 25, 'فترة السماح', bold)
+        sheet.write(row, col + 26, 'سعر الفائدة', bold)
+        sheet.write(row, col + 27, 'نوع الفائدة', bold)
+        sheet.write(row, col + 28, 'G1', bold)
+        sheet.write(row, col + 29, 'G2', bold)
+        sheet.write(row, col + 30, 'G3', bold)
+        sheet.write(row, col + 31, 'G4', bold)
+        sheet.write(row, col + 32, 'G5', bold)
+        sheet.write(row, col + 33, 'G6', bold)
+        sheet.write(row, col + 34, 'G7', bold)
+        sheet.write(row, col + 35, 'G8', bold)
+        sheet.write(row, col + 36, 'G9', bold)
+        sheet.write(row, col + 37, 'G10', bold)
+        sheet.write(row, col + 38, 'G11', bold)
+        sheet.write(row, col + 39, 'G12', bold)
+        sheet.write(row, col + 40, 'G13', bold)
+        sheet.write(row, col + 41, 'G14', bold)
+        sheet.write(row, col + 42, 'G15', bold)
+        sheet.write(row, col + 43, 'G16', bold)
+        sheet.write(row, col + 44, 'G17', bold)
+        sheet.write(row, col + 45, 'G18', bold)
+        sheet.write(row, col + 46, 'G19', bold)
+        sheet.write(row, col + 47, 'رقم الهوية جواز السفر للكفيل الأول', bold)
+        sheet.write(row, col + 48, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 49, 'رمز الجنسية', bold)
+        sheet.write(row, col + 50, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 51, 'رقم الهوية جواز السفر للكفيل الثاني', bold)
+        sheet.write(row, col + 52, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 53, 'رمز الجنسية', bold)
+        sheet.write(row, col + 54, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 55, 'رقم الهوية جواز السفر للكفيل الثالث', bold)
+        sheet.write(row, col + 56, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 57, 'رمز الجنسية', bold)
+        sheet.write(row, col + 58, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 59, 'رقم الهوية جواز السفر للكفيل الرابع', bold)
+        sheet.write(row, col + 60, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 61, 'رمز الجنسية', bold)
+        sheet.write(row, col + 62, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 63, 'رقم الهوية جواز السفر للكفيل الخامس', bold)
+        sheet.write(row, col + 64, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 65, 'رمز الجنسية', bold)
+        sheet.write(row, col + 66, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 67, 'رقم الهوية جواز السفر للكفيل السادس', bold)
+        sheet.write(row, col + 68, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 69, 'رمز الجنسية', bold)
+        sheet.write(row, col + 70, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 71, 'رقم الهوية جواز السفر للكفيل السابع', bold)
+        sheet.write(row, col + 72, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 73, 'رمز الجنسية', bold)
+        sheet.write(row, col + 74, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 75, 'رقم الهوية جواز السفر للكفيل الثامن', bold)
+        sheet.write(row, col + 76, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 77, 'رمز الجنسية', bold)
+        sheet.write(row, col + 78, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 79, 'رقم الهوية جواز السفر للكفيل التاسع', bold)
+        sheet.write(row, col + 80, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 81, 'رمز الجنسية', bold)
+        sheet.write(row, col + 82, 'نوع الضمانة المقدمة', bold)
+        sheet.write(row, col + 83, 'رقم الهوية جواز السفر للكفيل العاشر', bold)
+        sheet.write(row, col + 84, 'نوع وثيقة المقترص', bold)
+        sheet.write(row, col + 85, 'رمز الجنسية', bold)
+        sheet.write(row, col + 86, 'نوع الضمانة المقدمة', bold)
+
+
+
+       # sheet.write(row, col + 51, 'G24', bold)
+
+
+   #     sheet.write(row, col + 29, 'رقم الهوية  جواز السفر الأول', bold)
+     #   sheet.write(row, col + 30, 'نوع وثيقة المقترص', bold)
+    #    sheet.write(row, col + 31, ' رمز الجنسية', bold)
+    #    sheet.write(row, col + 32, ' نوع الضمانة المقدمة', bold)
+       # loaners = self.env['res.partner'].search([("active", "=", True), ("category.id", "=", 5)])
+        loaners = self.env['partner.loan.details'].search(['|','|',("state", "=", 'disburse'), ("state", "=", '1disburse'), ("state", "=", '2disburse'), ("id", ">",104 ), ("fac_id", "!=", "0169/2022"), ("fac_id", "!=", "0163/2022")])
+
+        loan_doc_type = 'S'
+        nationality_symbol = 'PS'
+        facility_id = ''
+        facility_category = 'SI'
+        account_type = 'S'
+        company_id = ''
+        branch_id = ''
+        facility_type = 'F011'   
+        economic_sector = 'S4'
+        cus_eval_stat = '0'
+        line_type = 'M'
+        legal = 'B'
+        doc_type ='DC'
+        #tot_amt = 0
+       # intrest_amt = 0
+        intrest_type = ''
+        unpaid_count = 0
+
+#########################################
+### to show last month in month \, year
+        today = datetime.date.today()
+        first = today.replace(day=1)
+        last_month = first - datetime.timedelta(days=1)
+        mm = last_month.strftime("%m")
+        yy = last_month.strftime("%Y")
+
+
+
+
+#########################
+        for loaner in loaners:
+            if loaner.loan_prog == 'trial':
+                tot_amt = loaner.principal_amount
+            elif loaner.loan_prog == 'cluster':
+                tot_amt = loaner.final_total
+
+       #     balance_amt = loaner.total_amount_due
+            balance_amt = 0
+            alocation_amt = 0
+            line_count = loaner.duration
+            date_disb = loaner.date_disb.strftime("%d/%m/%Y")
+            com = self.env['res.partner'].search([("id", "=", loaner.partner_id.id)])
+            fac_id = loaner.fac_id
+
+            if com.card_id:
+                id = com.card_id
+            else:
+                id = ""
+            guarantor_id = self.env['res.partner'].search([("id", "=", loaner.guarantor_id.id)])
+            if guarantor_id.card_id:
+
+                guar_card_id =  guarantor_id.card_id
+
+            else:
+                guar_card_id = ""
+            if loaner.loan_class == 'islamic':
+               fac_type = 'F011'
+            elif loaner.loan_class == 'commercial':
+               fac_type = 'F004'
+
+
+          #  print(guarantor_id.id)
+           # print(loaner.id)
+            last_pay = self.env['partner.loan.installment.details'].search([('loan_id.id','=', loaner.id)], limit=1, order="id desc")
+            last_pay_date = self.env['partner.loan.installment.details'].search([('loan_id.id', '=', loaner.id), ('state', '=', 'paid')], limit=1, order="id desc")
+            first_line = self.env['partner.loan.installment.details'].search([('loan_id.id', '=', loaner.id)], limit=1)
+            line_amt = first_line.tot_due
+            last_date = last_pay.date_to.strftime("%d/%m/%Y")
+            if isinstance(last_pay_date, datetime.date):
+     #       if last_pay_date:
+               last_paid_date = last_pay_date.payment_date.strftime("%d/%m/%Y")
+            else:
+               last_paid_date = ''
+
+            if loaner.grace_period:
+               grace = loaner.grace_period
+            else:
+                grace = ''
+            d2 = date.today()
+            #print (d2)
+            sum_unpaid = self.env['partner.loan.installment.details'].search([('loan_id.id','=', loaner.id), ('state','=', 'unpaid'), ('date_to', '<', d2)])
+         #   if (self.search_count([('date_from', '>', 'date_from')]) > 0):
+
+            sum_u = sum_unpaid.filtered(lambda line: line.loan_id.id == loaner.id)
+            pai = 0
+            if sum_u:
+                for sum in sum_u:
+                    pai += sum.remains
+            print (pai)
+            if loaner.company_id.id == 1:
+                   curr = 'ILS'
+            elif loaner.company_id.id == 2:
+                   curr = 'USD'
+            if loaner.loan_prog == 'trial':
+                intrest_amt = 0.03
+                intrest_type = '1'
+            elif loaner.loan_prog == 'cluster' and loaner.principal_amount < 10000:
+                intrest_amt = 500
+                intrest_type = '3'
+            elif loaner.loan_prog == 'cluster' and loaner.principal_amount > 10000 and loaner.principal_amount <= 30000:
+                intrest_amt = 3000
+                intrest_type = '3'
+            elif loaner.loan_prog == 'cluster' and loaner.principal_amount > 50000:
+                intrest_amt = 4000
+                intrest_type = '3'
+            elif loaner.loan_prog == 'seasonal':
+                intrest_amt = 300
+                intrest_type = '3'
+
+
+
+
+            sum_dur_unpaid = self.env['partner.loan.installment.details'].search([('loan_id.id', '=', loaner.id)])
+          #  sum_u = sum_unpaid.filtered(lambda line: line.loan_id.id == loaner.id)
+         #   xtot = sum_u.mapped('sum_u')
+           # xrat = sum(xtot)
+            ###fmt = '%Y-%m-%d'
+           ### for com in sum_dur_unpaid:
+              ###  unpaid_duration = 0
+              ###  cus_rank = 0
+              ###  t4 = 0
+             #   date_1 = date(com.date_from)
+              #  date_2 = date(com.payment_date)
+             #   d1 = datetime.datetime.strptime(str(com.date_from), '%Y-%m-%d')
+              #  d1 = datetime.datetime.strptime(str(com.date_from), '%m-%Y-%d')
+         #       d2 = datetime.datetime.strptime(str(com.payment_date), '%Y-%m-%d')
+               # d2 = datetime.datetime.strptime(str(com.payment_date), '%m-%Y-%d')
+
+          #      d3 = (d2 -d1).days
+            #    t4 = 0
+              ###  if com.payment_date:
+                 ### if com.payment_date and com.payment_date > com.date_from:
+                  ###  t1 = datetime.datetime.strptime(str(com.date_from), '%Y-%m-%d')
+                 #   t1 = datetime.datetime.strptime(str(com.date_from), '%m-%Y-%d')
+                  ###  t2 = datetime.datetime.strptime(str(com.payment_date), '%Y-%m-%d')
+                  #  t2 = datetime.datetime.strptime(str(com.payment_date), '%m-%Y-%d')
+                 ###   t3 = (t2 - t1).days
+                ###    t4 += t3
+                ###    unpaid_duration = t4
+               ###     print (unpaid_duration)
+                ###    if loaner.state != 'disburse' and unpaid_duration < 30:
+                   ###  cus_rank = 0
+                 #####  #   elif unpaid_duration < 30 and loaner.state == 'disburse':
+                   ###   cus_rank = 1
+                  ###  elif unpaid_duration >= 30 and unpaid_duration < 60  and loaner.state == 'disburse':
+                 ###     cus_rank = 2
+                  ###  elif unpaid_duration >= 60 and unpaid_duration < 90 and loaner.state == 'disburse':
+                  ###    cus_rank = 3
+                 ###   elif unpaid_duration >= 90 and unpaid_duration < 120 and loaner.state == 'disburse':
+                   ###   cus_rank = 4
+                  ###  elif unpaid_duration >= 120 and unpaid_duration < 150 and loaner.state == 'disburse':
+                  ###  cus_rank = 5
+
+                    ###print(unpaid_duration)
+               # elif :
+                   # unpaid_duration = 0
+            pai_perc = pai/line_amt
+            
+            if date.today() < loaner.date_disb_grace:
+                 cus_rank = 0
+            elif date.today() > loaner.date_disb_grace and pai_perc == 0:
+                 cus_rank = 1
+            elif pai_perc > 0 and pai_perc <= 1:
+                 cus_rank = 2
+            elif pai_perc > 1 and pai_perc <= 2:
+                 cus_rank = 3
+            elif pai_perc > 2 and pai_perc <= 3:
+                 cus_rank = 4
+            elif pai_perc > 3 and pai_perc <= 4 :
+                 cus_rank = 5
+
+
+
+
+            month = loaner.date_disb.strftime("%m")
+            year = loaner.date_disb.strftime("%Y")
+            G1 = loaner.principal_amount
+           # month = datetime.datetime.strptime(str(loaner.date_disb), '%Y-%m-%d').date()
+            row += 1
+            sheet.write(row, col, id)
+            sheet.write(row, col + 1, loan_doc_type)
+            sheet.write(row, col + 2, nationality_symbol)
+            sheet.write(row, col + 3, fac_id)
+            sheet.write(row, col + 4, facility_category)
+            sheet.write(row, col + 5, account_type)
+            sheet.write(row, col + 6, "116")
+
+            sheet.write(row, col + 7, "1")
+            sheet.write(row, col + 8, mm)
+            sheet.write(row, col + 9, yy)
+            sheet.write(row, col + 10, fac_type)
+            sheet.write(row, col + 11, curr)
+            sheet.write(row, col + 12, economic_sector)
+            sheet.write(row, col + 13, cus_rank)
+            sheet.write(row, col + 14, loaner.principal_amount)
+            sheet.write(row, col + 15, loaner.total_amount_due)
+            sheet.write(row, col + 16, alocation_amt)
+            sheet.write(row, col + 17, date_disb)
+            sheet.write(row, col + 18, last_date)
+            sheet.write(row, col + 19, pai)
+            sheet.write(row, col + 20, line_type)
+            sheet.write(row, col + 21, line_amt)
+            sheet.write(row, col + 22, legal)
+            sheet.write(row, col + 23, line_count)
+            sheet.write(row, col + 24, last_paid_date)
+            sheet.write(row, col + 25, grace)
+            sheet.write(row, col + 26, "0")
+            sheet.write(row, col + 27, intrest_type)
+            sheet.write(row, col + 28, '')
+            sheet.write(row, col + 29, '')
+            sheet.write(row, col + 30, '')
+            sheet.write(row, col + 31, '')
+            sheet.write(row, col + 32, '')
+            sheet.write(row, col + 33, loaner.principal_amount)
+            sheet.write(row, col + 34, '')
+            sheet.write(row, col + 35, '')
+            sheet.write(row, col + 36, '')
+            sheet.write(row, col + 37, '')
+            sheet.write(row, col + 38, '')
+            sheet.write(row, col + 39, '')
+            sheet.write(row, col + 40, '')
+            sheet.write(row, col + 41, '')
+            sheet.write(row, col + 42, '')
+            sheet.write(row, col + 43, '')
+            sheet.write(row, col + 44, '')
+            sheet.write(row, col + 45, '')
+            sheet.write(row, col + 46, '')
+            sheet.write(row, col + 47, loaner.guarantor_id.card_id)
+            sheet.write(row, col + 48, '')
+          #  sheet.write(row, col + 49, G1, bold)
+         #   sheet.write(row, col + 50, G1, bold)
+          #  sheet.write(row, col + 51, G1, bold)
+    # sheet.write(row, col + 29, intrest_type, bold)
+          #  sheet.write(row, col + 30, guar_card_id, bold)
+          #  sheet.write(row, col + 31, nationality_symbol, bold)
+          #  sheet.write(row, col + 32, doc_type, bold)

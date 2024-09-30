@@ -1,0 +1,744 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* erpezi_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210419\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-23 20:30+0000\n"
+"PO-Revision-Date: 2021-07-23 20:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "<span class=\"topage\"/> / <span class=\"page\"/>     صفحة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span style=\"font-family: Arial;\"> اسم المستخدم: </span>\n"
+"                      <span>      </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span style=\"font-family: Arial;\"> السنة: </span>\n"
+"                      <span>       </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span style=\"font-family: Arial;\">التصنيف الوظيفي </span>\n"
+"                      <span>       </span>\n"
+"                      <span> الكل </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span style=\"font-family: Arial;\">الى تاريخ: </span>\n"
+"                      <span>       </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span style=\"font-family: Arial;\">تاريخ طباعة التقرير: </span>\n"
+"                      <span>      </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span style=\"font-family: Arial;\">من تاريخ: </span>\n"
+"                      <span>       </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span style=\"font-family: Arial;\">موقع العمل </span>\n"
+"                      <span>       </span>\n"
+"                      <span> الكل </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span style=\"font-family: Arial;\">وقت الطباعة: </span>\n"
+"                      <span>      </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span>       </span>\n"
+"                      <span style=\"font-family: Arial;\">  عملة التقرير </span>\n"
+"                       <span>  :   </span>\n"
+"                      <span>      </span>\n"
+"                      <span> ريال </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid ""
+"<span>       </span>\n"
+"                      <span style=\"font-family: Arial;\"> الشهر: </span>\n"
+"                      <span>       </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "<span> يوم </span>"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.actions.act_window,name:erpezi_hr.action_report_vac_salary_menu
+#: model:ir.actions.report,name:erpezi_hr.report_hr_vac_salary
+#: model:ir.model,name:erpezi_hr.model_report_hr_vac_salary
+#: model:ir.ui.menu,name:erpezi_hr.menu_report_vac_salary
+msgid "Annual Vacation Settlement PDF"
+msgstr "مخالصة الاجازة السنوية PDF"
+
+#. module: erpezi_hr
+#: model:ir.model,name:erpezi_hr.model_report_erpezi_hr_report_hr_vac_salary_template
+msgid "Annual Vacation Settlement PDF Report"
+msgstr "تقرير مخالصة الاجازة السنوية PDF"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__state__approved
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_vac_salary__state__approve
+msgid "Approved"
+msgstr "موافق عليه"
+
+#. module: erpezi_hr
+#: model:ir.actions.act_window,name:erpezi_hr.action_report_attendance_menu
+#: model:ir.ui.menu,name:erpezi_hr.menu_report_payroll_official
+msgid "Attendance PDF"
+msgstr "الحضور PDF"
+
+#. module: erpezi_hr
+#: model:ir.model,name:erpezi_hr.model_report_erpezi_hr_report_attendance_template
+msgid "Attendance PDF Report"
+msgstr "تقرير الحضور PDF"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_vac_salary__state__cancel
+msgid "Cancelled"
+msgstr "ملغية او مرفوضة"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__company_id
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__company_id
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__state__confirm
+msgid "Confirm"
+msgstr "مؤكدة وبانتظار الموافقة"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__employee_contract_type
+msgid "Contract Type"
+msgstr "نوع العقد"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__create_uid
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__create_uid
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__create_date
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__create_date
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.ui.menu,name:erpezi_hr.menu_hr_attendance_Dashboard
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__display_name
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_attendance_template__display_name
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_hr_gratuity_settlement_template__display_name
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_hr_vac_salary_template__display_name
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__display_name
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__state__draft
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_vac_salary__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__emp_Chief_Accountant
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__emp_Chief_Accountant
+msgid "Emp Chief Accountant"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__emp_Financial_Manager
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__emp_Financial_Manager
+msgid "Emp Financial Manager"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__emp_HR_GRO_Manager
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__emp_HR_GRO_Manager
+msgid "Emp HR GRO Manager"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__resignation_id
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__vac_salary_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__date_to
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__date_to
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__date_to
+msgid "End Date"
+msgstr "الى تاريخ"
+
+#. module: erpezi_hr
+#: model:ir.actions.act_window,name:erpezi_hr.action_report_gratuity_settlement_menu
+#: model:ir.actions.report,name:erpezi_hr.report_hr_gratuity_settlement
+#: model:ir.ui.menu,name:erpezi_hr.menu_report_gratuity_settlement
+msgid "End of Service PDF"
+msgstr "نهاية الخدمة PDF"
+
+#. module: erpezi_hr
+#: model:ir.model,name:erpezi_hr.model_report_erpezi_hr_report_hr_gratuity_settlement_template
+msgid "End of Service PDF Report"
+msgstr "تقرير نهاية الخدمة PDF"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__resignation_type__endcontractno80
+msgid ""
+"End of contract based on Termination of the contract based on Article No 80"
+msgstr "انتهاء العقد بناءً على إنهاء العقد بناءً على المادة رقم 80"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__resignation_type__endcontractno81
+msgid ""
+"End of contract based on Termination of the contract based on Article No 81"
+msgstr "انتهاء العقد بناءً على إنهاء العقد بناءً على المادة رقم 81"
+
+#. module: erpezi_hr
+#: code:addons/erpezi_hr/report/attendance/report_attendance_template.py:0
+#: code:addons/erpezi_hr/report/hr_gratuity_settlement/report_hr_gratuity_settlement_template.py:0
+#: code:addons/erpezi_hr/report/hr_vac_salary/report_hr_vac_salary_template.py:0
+#, python-format
+msgid "Form content is missing, this report cannot be printed."
+msgstr "بعض بيانات النموذج فارغة، لا يمكن طباعة هذا التقارير."
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__id
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_attendance_template__id
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_hr_gratuity_settlement_template__id
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_hr_vac_salary_template__id
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__id
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__id
+msgid "ID"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance____last_update
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_attendance_template____last_update
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_hr_gratuity_settlement_template____last_update
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_erpezi_hr_report_hr_vac_salary_template____last_update
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement____last_update
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__write_uid
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__write_uid
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__write_date
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__write_date
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__employee_contract_type__limited
+msgid "Limited"
+msgstr "محدود"
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "Logo"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__resignation_type__normalresless10
+msgid "Normal resignation for less than 10 years"
+msgstr "استقالة عادية لأقل من 10 سنوات"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__resignation_type__normalresmore10
+msgid "Normal resignation for more than 10 years"
+msgstr "استقالة عادية لأكثر من 10 سنوات"
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_view
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_gratuity_settlement_view
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_vac_salary_view
+msgid "Print"
+msgstr "طباعة"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__state__cancel
+msgid "Rejected"
+msgstr "ملغي او مرفوض"
+
+#. module: erpezi_hr
+#: model:ir.actions.report,name:erpezi_hr.report_attendance
+#: model:ir.model,name:erpezi_hr.model_report_attendance
+msgid "Report Attendance PDF"
+msgstr "تقرير الحضور PDF"
+
+#. module: erpezi_hr
+#: model:ir.model,name:erpezi_hr.model_report_hr_gratuity_settlement
+msgid "Report Gratuity Settlement PDF"
+msgstr "تقرير التسوية PDF"
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_view
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_gratuity_settlement_view
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_vac_salary_view
+msgid "Report Options"
+msgstr "خيارت التقرير"
+
+#. module: erpezi_hr
+#: model:ir.ui.menu,name:erpezi_hr.menu_hr_gratuity_reports
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__resignation_type
+msgid "Resignation Type"
+msgstr "نوع الاستقالة"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_attendance__date_from
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__date_from
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__date_from
+msgid "Start Date"
+msgstr "من تاريخ"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_gratuity_settlement__state
+#: model:ir.model.fields,field_description:erpezi_hr.field_report_hr_vac_salary__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_vac_salary__state__submit
+msgid "Submitted"
+msgstr "مؤكدة وبانتظار الموافقة"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__resignation_type__terminationcontract
+msgid "Termination of contract"
+msgstr "إنهاء العقد"
+
+#. module: erpezi_hr
+#: model:ir.model.fields.selection,name:erpezi_hr.selection__report_hr_gratuity_settlement__employee_contract_type__unlimited
+msgid "Unlimited"
+msgstr "غير محدود"
+
+#. module: erpezi_hr
+#: model:ir.model.fields,field_description:erpezi_hr.field_resource_calendar_attendance__week_end
+msgid "Weekend"
+msgstr ""
+
+#. module: erpezi_hr
+#: model:ir.model,name:erpezi_hr.model_resource_calendar_attendance
+msgid "Work Detail"
+msgstr "تفاصيل العمل"
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "أجر العطل سنوية متبقية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "أقساط القرض المتبقية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "إجازة غير مدفوعة الأجر"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "إجمالي الخصومات"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "اجمالي ايام الاجازة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "اجمالي ايام العمل"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "اسم الموظف"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "الإجازات المدفوعة ساعات"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "الإجازات غير المدفوعة ساعات"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "الاستقالة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "الحالة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "الخروج المبكر"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "الخروج المبكر / الدخول المتأخر / المغادرة الشخصية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "الدخول المتأخر"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "الراتب الاخير"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "الراتب الاساسي"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "الساعات الفعلية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "الساعات المطلوبة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "الساعات المعتمدة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "الصافي"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "الغياب"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "القسم"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "المجموع"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "المغادرة الرسمية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "المغادرة الشخصية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "الموظف"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "الى تاريخ"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "اليوم الأخير المتوقع للموظف"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "اليوم الأخير الموافق عليه للموظف"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "اليوم الاخير في الشهر"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "تاريخ الانضمام"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "تفاصيل الاجازة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "تفاصيل الخصومات"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "تفاصيل العلاوات"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "تقرير مخالصات الاجازة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "تقرير مخالصات نهاية الخدمة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "تقرير ملخص أوقات الدوام"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "خصومات أخرى"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "خصومات التأمين"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "خصومات القروض"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "رئيس الحسابات"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "راتب الاجازة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "رمز الموظف"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "سنوات العمل"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "صافي المخالصة المالية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "عطل سنوية متبقية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "علاوات اخرى"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "علاوة السفر"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "علاوة العمل الإضافي الثابت"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "علاوة سكن"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "علاوة عمل اضافي"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "علاوة مشروع"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "علاوة مشروع ادخال يدوي"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "علاوة مواصلات"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "فترة الاشعار"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "مخصصات اخرى"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "مدير المالية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "مدير الموارد البشرية"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "مكافئة نهاية الخدمة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "من تاريخ"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "نسبة الدوام الفعلية (%)"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_attendance_template
+msgid "نسبة الدوام المعتمدة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_vac_salary_template
+msgid "نسبة ايام العمل"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "نوع الاستقالة"
+msgstr ""
+
+#. module: erpezi_hr
+#: model_terms:ir.ui.view,arch_db:erpezi_hr.report_hr_gratuity_settlement_template
+msgid "نوع العقد"
+msgstr ""

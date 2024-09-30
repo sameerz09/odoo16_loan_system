@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="paperformat_report_attendance" model="report.paperformat">
+            <field name="name">Report Attendance Format</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">80</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">70</field>
+            <field name="dpi">110</field>
+   </record>
+
+    <report id="report_attendance"
+            string="Report Attendance PDF"
+            model="hr.attendance"
+            report_type="qweb-pdf"
+            file="erpezi_hr.report_attendance_template"
+            name="erpezi_hr.report_attendance_template"
+     />
+    <report id="report_bonds"
+            string="Report Bonds PDF"
+            model="hr.attendance"
+            report_type="qweb-pdf"
+            file="erpezi_hr.report_attendance_template"
+            name="erpezi_hr.report_attendance_template"
+     />
+    <record id="report_attendance" model="ir.actions.report">
+            <field name="paperformat_id" ref="erpezi_hr.paperformat_report_attendance"/>
+    </record>
+
+    <report id="report_hr_gratuity_settlement"
+            string="End of Service PDF"
+            model="hr.gratuity"
+            report_type="qweb-pdf"
+            file="erpezi_hr.report_hr_gratuity_settlement_template"
+            name="erpezi_hr.report_hr_gratuity_settlement_template"
+     />
+    <record id="report_hr_gratuity_settlement" model="ir.actions.report">
+            <field name="paperformat_id" ref="erpezi_hr.paperformat_report_attendance"/>
+    </record>
+
+
+    <report id="report_hr_vac_salary"
+            string="Annual Vacation Settlement PDF"
+            model="hr.vac.salary"
+            report_type="qweb-pdf"
+            file="erpezi_hr.report_hr_vac_salary_template"
+            name="erpezi_hr.report_hr_vac_salary_template"
+     />
+    <record id="report_hr_vac_salary" model="ir.actions.report">
+            <field name="paperformat_id" ref="erpezi_hr.paperformat_report_attendance"/>
+    </record>
+
+</odoo>

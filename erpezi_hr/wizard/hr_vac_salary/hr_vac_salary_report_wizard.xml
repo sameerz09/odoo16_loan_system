@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="report_vac_salary_view" model="ir.ui.view">
+        <field name="name">Annual Vacation Settlement PDF</field>
+        <field name="model">report.hr.vac.salary</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group>
+                <field name="vac_salary_id" options="{'no_create': True}" />
+            </group>
+            <group col="4">
+                <field name="date_from" attrs="{'readonly': [('vac_salary_id','!=',False)]}"/>
+                <field name="date_to" attrs="{'readonly': [('vac_salary_id','!=',False)]}"/>
+            </group>
+            <group>
+                <field name="company_id" options="{'no_create': True}" attrs="{'readonly':True}" />
+            </group>
+            <group>
+                <field name="state" attrs="{'readonly': [('vac_salary_id','!=',False)]}"/>
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+
+    <record id="action_report_vac_salary_menu" model="ir.actions.act_window">
+        <field name="name">Annual Vacation Settlement PDF</field>
+        <field name="res_model">report.hr.vac.salary</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_vac_salary_view"/>
+        <field name="target">new</field>
+    </record>
+
+
+
+
+    <menuitem id="menu_report_vac_salary"
+              name="Annual Vacation Settlement PDF"
+              action="action_report_vac_salary_menu"
+              parent="erpezi_hr.menu_hr_gratuity_reports"
+              sequence="2"
+              groups="hr.group_hr_user"/>
+
+
+</odoo>

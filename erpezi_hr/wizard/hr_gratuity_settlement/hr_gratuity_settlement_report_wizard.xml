@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="report_gratuity_settlement_view" model="ir.ui.view">
+        <field name="name">Gratuity Settlement PDF</field>
+        <field name="model">report.hr.gratuity.settlement</field>
+        <field name="arch" type="xml">
+            <form string="Report Options">
+            <group>
+                <field name="resignation_id" options="{'no_create': True}" />
+            </group>
+            <group col="4">
+                <field name="date_from" attrs="{'readonly': [('resignation_id','!=',False)]}"/>
+                <field name="date_to" attrs="{'readonly': [('resignation_id','!=',False)]}"/>
+            </group>
+            <group>
+                <field name="company_id" options="{'no_create': True}" attrs="{'readonly':True}" />
+            </group>
+            <group col="4">
+                <field name="state" attrs="{'readonly': [('resignation_id','!=',False)]}"/>
+                <field name="employee_contract_type" attrs="{'readonly': [('resignation_id','!=',False)]}"/>
+            </group>
+            <group>
+                <field name="resignation_type" attrs="{'readonly': [('resignation_id','!=',False)]}"/>
+            </group>
+            <footer>
+                <button name="check_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+            </footer>
+        </form>
+        </field>
+    </record>
+
+    <record id="action_report_gratuity_settlement_menu" model="ir.actions.act_window">
+        <field name="name">End of Service PDF</field>
+        <field name="res_model">report.hr.gratuity.settlement</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="report_gratuity_settlement_view"/>
+        <field name="target">new</field>
+    </record>
+
+
+    <menuitem id="menu_hr_gratuity_reports"
+              name="Reports"
+              parent="hr_gratuity_settlement.menu_fin_clear_annual_vac"
+              sequence="3"
+              groups="hr.group_hr_user"/>
+
+    <menuitem id="menu_report_gratuity_settlement"
+              name="End of Service PDF"
+              action="action_report_gratuity_settlement_menu"
+              parent="menu_hr_gratuity_reports"
+              sequence="1"
+              groups="hr.group_hr_user"/>
+
+
+</odoo>

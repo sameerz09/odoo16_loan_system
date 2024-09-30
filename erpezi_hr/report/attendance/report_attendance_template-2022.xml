@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_attendance_template">
+        <t t-call="web.html_container">
+            <t t-set="data_report_margin_top" t-value="50"/>
+            <t t-set="data_report_header_spacing" t-value="40"/>
+            <t t-set="data_report_dpi" t-value="110"/>
+            <t t-set="data_report_orientation" t-value="'Landscape'"/>
+            <t t-set="i" t-value="1" />
+            <t t-if="not o" t-set="o" t-value="doc"/>
+            <t t-if="not company">
+              <t t-if="company_id">
+                <t t-set="company" t-value="company_id"/>
+              </t>
+              <t t-elif="o and 'company_id' in o and o.company_id.sudo()">
+                <t t-set="company" t-value="o.company_id.sudo()"/>
+              </t>
+              <t t-else="else">
+                <t t-set="company" t-value="res_company"/>
+              </t>
+            </t>
+            <div class="header">
+                <div class="row">
+                 <div class="col-3">
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="max-height:80px;width:160px" alt="Logo"/>
+                 </div>
+                 <div class="col-5 text-center">
+                    <h3 t-esc="company.name"/>
+                  </div>
+                  <div class="col-3">
+                 </div>
+                 </div>
+                <div class="row">
+                 <div class="col-3">
+                 </div>
+                 <div class="col-5 text-center">
+                        <h5 style="font-weight: bold;font-family: Arial;">  تقرير ملخص أوقات الدوام</h5>
+                  </div>
+                  <div class="col-3 offset-1 text-right">
+                     <span style="font-family: Arial;">تاريخ طباعة التقرير: </span>
+                      <span>  &#160; &#160; </span>
+                     <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/>
+                 </div>
+                 </div>
+                <div class="row">
+                 <div class="col-3">
+                 </div>
+                 <div class="col-5 text-center">
+                  </div>
+                  <div class="col-3 offset-1 text-right">
+                     <span style="font-family: Arial;">وقت الطباعة: </span>
+                      <span>  &#160; &#160; </span>
+                     <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%I:%M %p')"/>
+                 </div>
+                 </div>
+                     <div class="row">
+                 <div class="col-3">
+                 </div>
+                 <div class="col-5 text-center">
+                  </div>
+                  <div class="col-3 offset-1 text-right">
+                     <span style="font-family: Arial;"> اسم المستخدم: </span>
+                      <span>  &#160; &#160; </span>
+                     <span t-esc="user.name"></span>
+                 </div>
+                 </div>
+                   <div class="row">
+                 <div class="col-5 text-center">
+                  </div>
+                  <div class="col-3 offset-1">
+                 </div>
+                 </div>
+                   <div class="row" style="height:50px"></div>
+               </div>
+            <t t-call="web.internal_layout">
+                <div class="row">
+                 <div class="col-3">
+                 </div>
+                 <div class="col-5 text-center">
+                  </div>
+                  <div class="col-3 offset-1 text-right">
+                      <span style="font-family: Arial;">موقع العمل </span>
+                      <span>  &#160; &#160;  </span>
+                      <span> الكل </span>
+                 </div>
+                 </div>
+                <div class="row">
+                 <div class="col-3">
+                 </div>
+                 <div class="col-5 text-center">
+                  </div>
+                  <div class="col-3 offset-1 text-right">
+                      <span style="font-family: Arial;">التصنيف الوظيفي </span>
+                      <span>  &#160; &#160;  </span>
+                      <span> الكل </span>
+                 </div>
+                 </div>
+                <div class="row">
+                 <div class="col-3">
+                 </div>
+                 <div class="col-5  text-center">
+                  </div>
+                  <div class="col-3 offset-1 text-right">
+                     <span style="font-family: Arial;">من تاريخ: </span>
+                      <span>   &#160; &#160; </span>
+                      <span t-esc="data['date_from']"/>
+                 </div>
+                 </div>
+                <div class="row">
+                 <div class="col-3">
+                 </div>
+                 <div class="col-5 text-center">
+                  </div>
+                  <div class="col-3 offset-1 text-right">
+                      <span style="font-family: Arial;">الى تاريخ: </span>
+                      <span>  &#160; &#160;  </span>
+                      <span t-esc="data['date_to']"/>
+                 </div>
+                 </div>
+                <div class="row">
+                 <div class="col-3">
+                 </div>
+                 <div class="col-5 text-center">
+                  </div>
+                  <div class="col-3 offset-1 text-right">
+                      <span style="font-family: Arial;"> السنة: </span>
+                      <span>  &#160; &#160;  </span>
+                  <span t-esc="context_timestamp(datetime.datetime.strptime(data['date_to'], '%Y-%M-%d')).strftime('%Y')"/>
+                     <span>  &#160; &#160;  </span>
+                      <span style="font-family: Arial;"> الشهر: </span>
+                      <span>  &#160; &#160;  </span>
+                  <span t-esc="context_timestamp(datetime.datetime.strptime(data['date_to'], '%Y-%M-%d')).strftime('%M')"/>
+                 </div>
+                 </div>
+                <div   class="page mt8 mb8">
+                    <table border="1"  style="border-collapse: collapse;border:1px solid black" class="table table-sm table-bordered mt8 mb8">
+                        <thead>
+                             <tr style="border-top: 3px solid black;border-left: 3px solid black;border-right: 3px solid black;border-bottom:none;font-family: Arial;text-align:center;background-color:#E4E4E4">
+                                <th style="border-left:3px solid black;border-right:3px solid black" >نسبة الدوام المعتمدة</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black" >الساعات المعتمدة</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black" >نسبة الدوام الفعلية (%)</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black" >الساعات الفعلية</th>
+<!--                                <th style="border-left:3px solid black;border-right:3px solid black" >العمل الاضافي</th>-->
+                                <th style="border-left:3px solid black;border-right:3px solid black" >المغادرة الرسمية</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black" colspan="3">الخروج المبكر / الدخول المتأخر / المغادرة الشخصية</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black" >الإجازات غير المدفوعة ساعات</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black">الإجازات المدفوعة ساعات</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black" >الساعات المطلوبة</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black" >اسم الموظف</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black" >رمز الموظف</th>
+                                 <th style="border-left:3px solid black;border-right:3px solid black">ت</th>
+                            </tr>
+                            <tr style="border-bottom: 3px solid black;border-left: 3px solid black;border-right: 3px solid black;border-top:none;background-color:#E4E4E4;font-family: Arial;">
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border:3px solid black;text-align:center">الخروج المبكر</th>
+                                <th style="border:3px solid black;text-align:center">الدخول المتأخر</th>
+                                <th style="border:3px solid black;text-align:center">المغادرة الشخصية</th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                                <th style="border-left:3px solid black;border-right:3px solid black"></th>
+                            </tr>
+
+                        </thead>
+                        <tr style="border: 3px solid black;" align="left" t-foreach="lines" t-as="line">
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['real_attendences_hours_percent'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['real_attendences_hours'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['attendences_hours_percent'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['attendences_hours'])"/>
+                            </td>
+<!--                            <td style="border: 3px solid black;">-->
+<!--                                <span t-esc="'{:,.2f}'.format(line['overtime_hours'])"/>-->
+<!--                            </td>-->
+                            <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['holidays_formal_hours'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['early_out_hours'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['late_leave_hours'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['holidays_personal_hours'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['holidays_unpaid_hours'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="'{:,.2f}'.format(line['holidays_paid_hours'])"/>
+                            </td>
+                             <td style="border: 3px solid black;font-family: Arial;">
+                                <span t-esc="'{:,.2f}'.format(line['required_hours'])"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                                <span t-esc="line['name']"/>
+                            </td>
+                             <td style="border: 3px solid black;">
+                              <span t-esc="line['id']"/>
+                            </td>
+                            <td style="border: 3px solid black;">
+                                <span t-esc="i"/>
+                                <t t-set="i" t-value="i+1"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="row" style="height:50px"></div>
+                </div>
+           </t>
+            <div t-attf-class="footer o_standard_footer o_company_#{env.company.id}_layout">
+               <div class="text-center">
+                  <div >
+                    <span class="topage"/> / <span class="page"/>&#160;   &#160;صفحة
+                  </div>
+               </div>
+            </div>
+
+        </t>
+    </template>
+</odoo>
