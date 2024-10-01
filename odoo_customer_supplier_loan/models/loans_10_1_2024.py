@@ -588,7 +588,7 @@ class EmployeeLoanDetails(models.Model):
     disbursed_account_id = fields.Many2one(
         'account.account',
         string='Disburse Account',
-        related="journal_id.default_account_id",
+        related="journal_id.default_credit_account_id",
         stored=True,
     )
     interest_receivable_account_id = fields.Many2one(
@@ -599,7 +599,7 @@ class EmployeeLoanDetails(models.Model):
     interest_account_id = fields.Many2one(
         'account.account',
         string='Interest Account',
-        related="journal_id2.default_account_id",
+        related="journal_id2.default_credit_account_id",
         stored=True,
     )
     interest_loan_journal = fields.Many2one(

@@ -99,14 +99,14 @@ Allowed your Customers to see their Loans in Portal My Account Page.
          'views/loan_partner.xml',
         #'views/prepayment_writeoff_view.xml',  #dd
 #         'views/loan_payroll_workflow.xml',
-#           'views/reschedule.xml',
+          'views/reschedule.xml',
         'data/loan_payroll_sequence.xml',
 #         'report/loan_payroll_report_view.xml',  #dd
  #      'wizard/loan_report_wiz_view.xml',  #dd
 #         'loan_details_report_view.xml',  #dd
         'views/payment.xml',#todoprobuse
-         # 'views/payments.xml',
-        # 'views/loans.xml',
+         'views/payments.xml',
+        'views/loans.xml',
         'wizard/loan_bonds_view.xml',
         'wizard/loan_monetary_report/loan_monetary.xml',
         'views/loan_proof.xml',
