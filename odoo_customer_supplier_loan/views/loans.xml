@@ -73,9 +73,9 @@
                                        class="oe_inline"
                                        attrs="{'readonly': [('state', 'in', ['approved','paid','1disburse','2disburse','disburse','rejected','closed','cancel'])]}"
                                 />
-                               <field name="first_payment" width="20%%" class="oe_inline"/>
-                                <field name="seconed_payment"  width="20%%" class="oe_inline"/>
-                                <field name="third_payment" width="20%%" class="oe_inline"/>
+                               <field name="first_payment" width="20%%" class="oe_inline" widget="monetary" attrs="{'invisible':['|',('no_paym', '=', '1')]}"/>
+                                <field name="seconed_payment"  width="20%%" class="oe_inline" widget="monetary" attrs="{'invisible':['|',('no_paym', '=', '1')]}"/>
+                                <field name="third_payment" width="20%%" class="oe_inline" widget="monetary" attrs="{'invisible':['|',('no_paym', '=', '2'),('no_paym', '=', '1')]}"/>
                                 <field name="governorate" width="20%%" class="oe_inline" attrs="{'readonly': [('state', 'in', ['approved','paid','1disburse','2disburse','disburse','rejected','closed','cancel'])]}"/>
 
 
@@ -129,9 +129,9 @@
                                 <!--								<field name="department_id"/-->
                                 <field name="company_id" groups="base.group_multi_company" widget="selection" />
                                 <field name="user_id" />
-                                <field name="first_dis_date" width="20%%" class="oe_inline"/>
-                                <field name="second_dis_date" width="20%%" class="oe_inline"/>
-                                <field name="third_dis_date" width="20%%" class="oe_inline"/>
+                                <field name="first_dis_date" width="20%%" class="oe_inline" attrs="{'invisible':['|',('no_paym', '=', '1')]}"/>
+                                <field name="second_dis_date" width="20%%" class="oe_inline" attrs="{'invisible':['|',('no_paym', '=', '1')]}"/>
+                                <field name="third_dis_date" width="20%%" class="oe_inline" attrs="{'invisible':['|',('no_paym', '=', '2'),('no_paym', '=', '1')]}"/>
                                 <field name="agri_type" width="20%%" class="oe_inline" attrs="{'readonly': [('state', 'in', ['approved','paid','1disburse','2disburse','disburse','rejected','closed','cancel'])]}"/>
                                 <field name="sub_agri_type" width="20%%" class="oe_inline" />
                                 <field name="resch_times" width="20%%" class="oe_inline"/>
@@ -269,7 +269,7 @@
                     <field name="date_applied" />
                     <field name="loan_type" />
                     <field name="loan_partner_type"/>
-<!--                    <field name="loan_class" domain="[('loan_class', '=', 'Islamic')]"/>-->
+                    <field name="loan_class"/>
                     <field name="partner_id" />
                     <field name="int_payable" invisible="1" />
                     <field name="interest_mode" invisible="1" />
